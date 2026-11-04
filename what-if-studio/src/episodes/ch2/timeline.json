@@ -1,0 +1,304 @@
+{
+ "slug": "ch2",
+ "title": "CHAPTER 2: GAMING THE SYSTEM THE SOCIAL SORTING APOCALYPSE",
+ "fps": 30,
+ "total": 1973,
+ "segments": [
+  {
+   "shot": "S1",
+   "a": 0,
+   "b": 138,
+   "t0": 0,
+   "t1": 138,
+   "line": "Within two days, people found cruel ways to use the visible timers against each other."
+  },
+  {
+   "shot": "S2",
+   "a": 138,
+   "b": 208,
+   "t0": 0,
+   "t1": 70,
+   "line": "Bosses checked foreheads during job interviews"
+  },
+  {
+   "shot": "S3",
+   "a": 208,
+   "b": 281,
+   "t0": 0,
+   "t1": 73,
+   "line": "and refused to hire anyone with under a year left."
+  },
+  {
+   "shot": "S4",
+   "a": 281,
+   "b": 423,
+   "t0": 0,
+   "t1": 142,
+   "line": "Banks would not approve home loans for couples whose digital clocks showed less than five years."
+  },
+  {
+   "shot": "S5",
+   "a": 423,
+   "b": 649,
+   "t0": 0,
+   "t1": 226,
+   "line": "Pip watched his best friend Mo land a huge promotion at their busy accounting office. Mo had forty-two peaceful years on his forehead, so the manager"
+  },
+  {
+   "shot": "S6",
+   "a": 649,
+   "b": 693,
+   "t0": 0,
+   "t1": 44,
+   "line": "trusted him with everything."
+  },
+  {
+   "shot": "S7",
+   "a": 693,
+   "b": 847,
+   "t0": 0,
+   "t1": 154,
+   "line": "Meanwhile, dating apps added a filter so people could hide users with short timers completely."
+  },
+  {
+   "shot": "S8",
+   "a": 847,
+   "b": 1007,
+   "t0": 0,
+   "t1": 160,
+   "line": "Landlords kicked out tenants whose displays turned yellow, because they feared broken pipes or missed rent."
+  },
+  {
+   "shot": "S9",
+   "a": 1007,
+   "b": 1145,
+   "t0": 0,
+   "t1": 138,
+   "line": "People with low clocks were treated like walking human bombs ready to explode at any moment."
+  },
+  {
+   "shot": "S10",
+   "a": 1145,
+   "b": 1291,
+   "t0": 0,
+   "t1": 146,
+   "line": "Store clerks watched them nervously, and strangers crossed the street just to stay away from them."
+  },
+  {
+   "shot": "S11",
+   "a": 1291,
+   "b": 1420,
+   "t0": 0,
+   "t1": 129,
+   "line": "Pip wore a thick winter hat to work, but the glowing red light shone right through. His"
+  },
+  {
+   "shot": "S12",
+   "a": 1420,
+   "b": 1566,
+   "t0": 0,
+   "t1": 146,
+   "line": "timer dropped below four days, and every small move felt like stepping on thin ice. He"
+  },
+  {
+   "shot": "S13",
+   "a": 1566,
+   "b": 1688,
+   "t0": 0,
+   "t1": 122,
+   "line": "wondered if one wrong word would ruin his job before the weekend even started."
+  },
+  {
+   "shot": "S14",
+   "a": 1688,
+   "b": 1825,
+   "t0": 0,
+   "t1": 137,
+   "line": "The social pressure was growing fast, and nobody in the city felt safe around him anymore."
+  },
+  {
+   "shot": "S15",
+   "a": 1825,
+   "b": 1905,
+   "t0": 0,
+   "t1": 80,
+   "line": "Even his oldest friends made polite excuses whenever he"
+  },
+  {
+   "shot": "S16",
+   "a": 1905,
+   "b": 1973,
+   "t0": 0,
+   "t1": 68,
+   "line": "asked to hang out after work."
+  }
+ ],
+ "shots": [
+  {
+   "id": "S1",
+   "size": "wide",
+   "key": 15,
+   "len": 138,
+   "first": 0,
+   "line": "Within two days, people found cruel ways to use the visible timers against each other.",
+   "note": "City corporate lobby: people being sorted by timer length"
+  },
+  {
+   "id": "S2",
+   "size": "medium",
+   "key": 15,
+   "len": 70,
+   "first": 138,
+   "line": "Bosses checked foreheads during job interviews",
+   "note": "Job interview: Suit scans applicant forehead"
+  },
+  {
+   "id": "S3",
+   "size": "close-up",
+   "key": 15,
+   "len": 73,
+   "first": 208,
+   "line": "and refused to hire anyone with under a year left.",
+   "note": "Resume rejected stamp"
+  },
+  {
+   "id": "S4",
+   "size": "medium",
+   "key": 15,
+   "len": 142,
+   "first": 281,
+   "line": "Banks would not approve home loans for couples whose digital clocks showed less than five years.",
+   "note": "Bank loan desk, denied documents pushed back"
+  },
+  {
+   "id": "S5",
+   "size": "medium",
+   "key": 15,
+   "len": 226,
+   "first": 423,
+   "line": "Pip watched his best friend Mo land a huge promotion at their busy accounting office. Mo had forty-two peaceful years on his forehead, so the manager",
+   "note": "Mo gets huge promotion in accounting office"
+  },
+  {
+   "id": "S6",
+   "size": "close-up",
+   "key": 15,
+   "len": 44,
+   "first": 649,
+   "line": "trusted him with everything.",
+   "note": "Mo handed keys and executive files"
+  },
+  {
+   "id": "S7",
+   "size": "ui insert",
+   "key": 15,
+   "len": 154,
+   "first": 693,
+   "line": "Meanwhile, dating apps added a filter so people could hide users with short timers completely.",
+   "note": "Dating app filter: hide short timers"
+  },
+  {
+   "id": "S8",
+   "size": "medium",
+   "key": 15,
+   "len": 160,
+   "first": 847,
+   "line": "Landlords kicked out tenants whose displays turned yellow, because they feared broken pipes or missed rent.",
+   "note": "Yellow timer tenant evicted with cardboard boxes"
+  },
+  {
+   "id": "S9",
+   "size": "wide",
+   "key": 15,
+   "len": 138,
+   "first": 1007,
+   "line": "People with low clocks were treated like walking human bombs ready to explode at any moment.",
+   "note": "Crowd visibly parting around a man with a red timer"
+  },
+  {
+   "id": "S10",
+   "size": "medium",
+   "key": 15,
+   "len": 146,
+   "first": 1145,
+   "line": "Store clerks watched them nervously, and strangers crossed the street just to stay away from them.",
+   "note": "Clerk eyeing customer with short timer warily"
+  },
+  {
+   "id": "S11",
+   "size": "medium",
+   "key": 15,
+   "len": 129,
+   "first": 1291,
+   "line": "Pip wore a thick winter hat to work, but the glowing red light shone right through. His",
+   "note": "Pip walks in with thick beanie, red glow piercing through"
+  },
+  {
+   "id": "S12",
+   "size": "medium",
+   "key": 15,
+   "len": 146,
+   "first": 1420,
+   "line": "timer dropped below four days, and every small move felt like stepping on thin ice. He",
+   "note": "Pip sitting at desk, thin ice feeling"
+  },
+  {
+   "id": "S13",
+   "size": "close-up",
+   "key": 15,
+   "len": 122,
+   "first": 1566,
+   "line": "wondered if one wrong word would ruin his job before the weekend even started.",
+   "note": "Keyboard Enter key, trembling finger"
+  },
+  {
+   "id": "S14",
+   "size": "medium",
+   "key": 15,
+   "len": 137,
+   "first": 1688,
+   "line": "The social pressure was growing fast, and nobody in the city felt safe around him anymore.",
+   "note": "Office breakroom, colleagues whispering and backing away"
+  },
+  {
+   "id": "S15",
+   "size": "ui insert",
+   "key": 15,
+   "len": 80,
+   "first": 1825,
+   "line": "Even his oldest friends made polite excuses whenever he",
+   "note": "Text chat: friends making polite excuses"
+  },
+  {
+   "id": "S16",
+   "size": "hero wide",
+   "key": 15,
+   "len": 68,
+   "first": 1905,
+   "line": "asked to hang out after work.",
+   "note": "Pip standing completely isolated in evening city"
+  }
+ ],
+ "fx": [
+  {
+   "kind": "flash",
+   "f": 210
+  },
+  {
+   "kind": "shake",
+   "f": 38
+  },
+  {
+   "kind": "flash",
+   "f": 1422
+  }
+ ],
+ "audio": {
+  "voice": "ch2/voice.wav",
+  "sfx": "ch2/sfx.wav",
+  "voiceVol": 0.8,
+  "sfxVol": 0.7818,
+  "music": "ch2/music.wav",
+  "musicVol": 0.1225
+ }
+}

@@ -1,0 +1,135 @@
+{
+ "id": "Ch3",
+ "slug": "ch3",
+ "topic": "What if everyone had a visible timer counting down to their biggest mistake? - Chapter 3",
+ "title": [
+  "CHAPTER 3: THE HIDDEN CATCH",
+  "THE PSYCHOLOGY AND SCIENCE TWIST"
+ ],
+ "accent": "SCIENCE",
+ "power": {
+  "word": "Ironic.",
+  "rule": "staring at your impending failure causes the exact prefrontal cortex panic that creates it",
+  "look": "cyan neural blueprint and orange target vector HUD"
+ },
+ "voice": {
+  "provider": "edge-tts",
+  "voice": "en-US-ChristopherNeural",
+  "rate": "+12%"
+ },
+ "script": [
+  { "beat": "1", "text": "Pip desperately wanted to stop his timer, so he visited a brain scientist for help." },
+  { "beat": "2", "text": "The scientist told him that the timers were tied to how human brains handle fear." },
+  { "beat": "3", "text": "Way back in nineteen eighty-seven, a researcher named Daniel Wegner found a strange brain habit." },
+  { "beat": "4", "text": "He called it ironic process theory, and it happens whenever you try not to fail." },
+  { "beat": "5", "text": "When you force yourself not to think about a white bear, you think about it constantly." },
+  { "beat": "6", "text": "Fighter pilots call this target fixation, and it causes them to crash during fast flight." },
+  { "beat": "7", "text": "If a pilot stares straight at a tall tree, his hands steer right into it." },
+  { "beat": "8", "text": "The floating timers were not reading magic, but measuring the stress inside your own head." },
+  { "beat": "9", "text": "As the clock ticks toward zero, your body floods with four times more stress hormone." },
+  { "beat": "10", "text": "That wave of chemical panic shuts down your memory and makes your hands shake uncontrollably." },
+  { "beat": "11", "text": "So the timer does not predict an accident waiting in the stars for you." },
+  { "beat": "12", "text": "Staring at the glowing numbers is the exact thing that causes you to mess up." },
+  { "beat": "13", "text": "The more you worry about failing, the more likely you are to make it happen." },
+  { "beat": "14", "text": "Pip realized his own fear was creating the very disaster he was trying to dodge." }
+ ],
+ "science": [
+  {
+   "claim": "Ironic Process Theory and Target Fixation prove that hyper-monitoring forbidden errors guarantees cognitive failure.",
+   "working": "Wegner's dual-process model demonstrates that cognitive suppression activates an automatic monitoring process that remains sensitive to the suppressed thought. Under stress or cognitive load (such as a 400% cortisol surge), the conscious operating process is undermined, causing paradoxical rebound and involuntary action steering.",
+   "source": "Daniel M. Wegner (1987) 'Paradoxical effects of thought suppression', Journal of Personality and Social Psychology; US Air Force Flight Safety 'Target Fixation Syndrome'."
+  }
+ ],
+ "gaps": {
+  "pairs": {
+   "help|The": 0.25,
+   "fear|Way": 0.25,
+   "habit|He": 0.25,
+   "fail|When": 0.25,
+   "constantly|Fighter": 0.30,
+   "flight|If": 0.25,
+   "it|The": 0.25,
+   "head|As": 0.25,
+   "hormone|That": 0.25,
+   "uncontrollably|So": 0.30,
+   "you|Staring": 0.30,
+   "up|The": 0.25,
+   "happen|Pip": 0.30
+  }
+ },
+ "cast": [
+  "pipHood",
+  "suit"
+ ],
+ "shots": [
+  { "id": "S1", "size": "medium", "set": "study", "key": 15, "note": "Pip visits research laboratory, scientist greets him" },
+  { "id": "S2", "size": "medium", "set": "study", "key": 15, "note": "Scientist explains brain fear response" },
+  { "id": "S3", "size": "schematic", "set": "schematic", "key": 15, "note": "Harvard 1987 psychology experiment record" },
+  { "id": "S4", "size": "science diagram", "set": "schematic", "key": 20, "note": "White Bear Ironic Process Theory blueprint diagram" },
+  { "id": "S5", "size": "thought bubble", "set": "study", "key": 15, "note": "Pip's mind struggling not to think of white bear" },
+  { "id": "S6", "size": "science diagram", "set": "schematic", "key": 20, "note": "Fighter Pilot Target Fixation HUD diagram" },
+  { "id": "S7", "size": "cockpit insert", "set": "schematic", "key": 15, "note": "Pilot staring at obstacle, hands steer in" },
+  { "id": "S8", "size": "schematic", "set": "schematic", "key": 15, "note": "Prefrontal cortex neural stress meter" },
+  { "id": "S9", "size": "schematic", "set": "schematic", "key": 15, "note": "Cortisol hormone graph surging +400%" },
+  { "id": "S10", "size": "macro insert", "set": "study", "key": 15, "note": "Pip's hand shaking uncontrollably on desk" },
+  { "id": "S11", "size": "wide", "set": "study", "key": 15, "note": "Scientist: timer is not magic fate" },
+  { "id": "S12", "size": "close-up", "set": "bedroom", "key": 15, "note": "Pip staring at glowing numbers causing the blunder" },
+  { "id": "S13", "size": "diagram", "set": "schematic", "key": 15, "note": "Psychological feedback loop diagram" },
+  { "id": "S14", "size": "close-up", "set": "study", "key": 15, "note": "Pip's eyes widen with epiphany" },
+  { "id": "S15", "size": "low angle", "set": "rooftop", "key": 15, "note": "Pip outside looking at dusk sky, realization" },
+  { "id": "S16", "size": "hero medium", "set": "study", "key": 15, "note": "Pip resolves to break the mental cycle" }
+ ],
+ "edit": [
+  { "shot": "S1", "at": "f:0" },
+  { "shot": "S2", "at": "scientist" },
+  { "shot": "S3", "at": "Way" },
+  { "shot": "S4", "at": "ironic" },
+  { "shot": "S5", "at": "white" },
+  { "shot": "S6", "at": "Fighter" },
+  { "shot": "S7", "at": "pilot" },
+  { "shot": "S8", "at": "floating" },
+  { "shot": "S9", "at": "body" },
+  { "shot": "S10", "at": "chemical" },
+  { "shot": "S11", "at": "predict" },
+  { "shot": "S12", "at": "Staring" },
+  { "shot": "S13", "at": "more" },
+  { "shot": "S14", "at": "Pip" },
+  { "shot": "S15", "at": "creating" },
+  { "shot": "S16", "at": "dodge" }
+ ],
+ "fx": [
+  { "at": "ironic", "kind": "flash" },
+  { "at": "Fighter", "kind": "flash" },
+  { "at": "chemical", "kind": "shake" },
+  { "at": "Pip", "kind": "flash" }
+ ],
+ "sound": {
+  "clips": {
+   "title_boom": [ "a cinematic whoosh rising into a deep boom impact", 1.6 ],
+   "counter_tick": [ "a fast mechanical counter ticking up rapidly, digits rolling over, getting faster", 1.6 ],
+   "copy_click": [ "a crisp satisfying computer copy click with a tiny soft digital chime, short", 0.5 ],
+   "drone_hit": [ "a dark ominous low drone hit, deep cinematic horror sting", 2.6 ],
+   "ding": [ "a correct answer ding, bright bell chime", 0.8 ],
+   "room_tone": [ "quiet indoor room tone in the evening, faint distant city hum, no voices", 12.5 ],
+   "roof_wind": [ "a gentle evening breeze on a city rooftop, distant traffic", 7.0 ],
+   "music": [ "playful quirky cartoon background music, pizzicato strings, glockenspiel and soft bass, light and curious, 110 bpm, no vocals", 17.0 ]
+  },
+  "events": [
+   [ "S1", "room_tone", 0.30 ],
+   [ "ironic", "title_boom", 0.60, "peak" ],
+   [ "Fighter", "drone_hit", 0.60, "onset" ],
+   [ "body", "counter_tick", 0.40 ],
+   [ "Staring", "counter_tick", 0.45 ],
+   [ "Pip", "ding", 0.40 ],
+   [ "creating", "roof_wind", 0.25 ]
+  ],
+  "music": {
+   "clip": "music",
+   "until": "Fighter"
+  },
+  "levels": {
+   "sfx_lu": -2.0,
+   "music_lu": -11.0
+  }
+ }
+}

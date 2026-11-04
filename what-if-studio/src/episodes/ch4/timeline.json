@@ -1,0 +1,304 @@
+{
+ "slug": "ch4",
+ "title": "CHAPTER 4: SOCIETY REACTS & ESCALATION THE BUNKER TRAP AND SOCIAL BREAKDOWN",
+ "fps": 30,
+ "total": 2061,
+ "segments": [
+  {
+   "shot": "S1",
+   "a": 0,
+   "b": 146,
+   "t0": 0,
+   "t1": 146,
+   "line": "When the scientist's report leaked online, it sparked wild panic across every major city."
+  },
+  {
+   "shot": "S2",
+   "a": 146,
+   "b": 303,
+   "t0": 0,
+   "t1": 157,
+   "line": "Rich people paid thousands of dollars to lock themselves inside quiet, padded basement rooms. They"
+  },
+  {
+   "shot": "S3",
+   "a": 303,
+   "b": 442,
+   "t0": 0,
+   "t1": 139,
+   "line": "believed sitting alone in dark silence would protect them until their timers hit zero safely."
+  },
+  {
+   "shot": "S4",
+   "a": 442,
+   "b": 614,
+   "t0": 0,
+   "t1": 172,
+   "line": "Unfortunately, total isolation backfired fast because human brains get weird when they sit in silence."
+  },
+  {
+   "shot": "S5",
+   "a": 614,
+   "b": 785,
+   "t0": 0,
+   "t1": 171,
+   "line": "Trapped alone with their ticking clocks, terrified bosses accidentally sent their life savings to fake emails."
+  },
+  {
+   "shot": "S6",
+   "a": 785,
+   "b": 938,
+   "t0": 0,
+   "t1": 153,
+   "line": "Supermarkets set up scanners at their front doors, banning anyone with under twenty-four hours left."
+  },
+  {
+   "shot": "S7",
+   "a": 938,
+   "b": 1100,
+   "t0": 0,
+   "t1": 162,
+   "line": "Security guards pushed scared shoppers onto the street, causing loud shouting matches in the parking lot."
+  },
+  {
+   "shot": "S8",
+   "a": 1100,
+   "b": 1236,
+   "t0": 0,
+   "t1": 136,
+   "line": "Pip walked down his quiet apartment hallway, and his frightened neighbors slammed their doors shut."
+  },
+  {
+   "shot": "S9",
+   "a": 1236,
+   "b": 1389,
+   "t0": 0,
+   "t1": 153,
+   "line": "People peeked through their peepholes, whispering about the dangerous red glow walking past their homes. Pip"
+  },
+  {
+   "shot": "S10",
+   "a": 1389,
+   "b": 1527,
+   "t0": 0,
+   "t1": 138,
+   "line": "sat on his couch and watched his clock drop below forty-five minutes in total silence. His"
+  },
+  {
+   "shot": "S11",
+   "a": 1527,
+   "b": 1650,
+   "t0": 0,
+   "t1": 123,
+   "line": "palms were dripping with cold sweat, and his fingers were shaking like dry leaves."
+  },
+  {
+   "shot": "S12",
+   "a": 1650,
+   "b": 1795,
+   "t0": 0,
+   "t1": 145,
+   "line": "Every muscle in his body told him to run, but running felt just as dangerous. He was completely"
+  },
+  {
+   "shot": "S13",
+   "a": 1795,
+   "b": 1905,
+   "t0": 0,
+   "t1": 110,
+   "line": "trapped between his own racing thoughts and a timer that never stopped ticking."
+  },
+  {
+   "shot": "S14",
+   "a": 1905,
+   "b": 1973,
+   "t0": 0,
+   "t1": 68,
+   "line": "Outside his window, sirens wailed through"
+  },
+  {
+   "shot": "S15",
+   "a": 1973,
+   "b": 2018,
+   "t0": 0,
+   "t1": 45,
+   "line": "the night as another neighborhood fell into"
+  },
+  {
+   "shot": "S16",
+   "a": 2018,
+   "b": 2061,
+   "t0": 0,
+   "t1": 43,
+   "line": "panic."
+  }
+ ],
+ "shots": [
+  {
+   "id": "S1",
+   "size": "wide",
+   "key": 15,
+   "len": 146,
+   "first": 0,
+   "line": "When the scientist's report leaked online, it sparked wild panic across every major city.",
+   "note": "Citywide panic news broadcast ticker"
+  },
+  {
+   "id": "S2",
+   "size": "medium",
+   "key": 15,
+   "len": 157,
+   "first": 146,
+   "line": "Rich people paid thousands of dollars to lock themselves inside quiet, padded basement rooms. They",
+   "note": "Steel vault bunker door locking tightly"
+  },
+  {
+   "id": "S3",
+   "size": "wide",
+   "key": 15,
+   "len": 139,
+   "first": 303,
+   "line": "believed sitting alone in dark silence would protect them until their timers hit zero safely.",
+   "note": "Rich CEO sitting alone in dark padded room"
+  },
+  {
+   "id": "S4",
+   "size": "close-up",
+   "key": 15,
+   "len": 172,
+   "first": 442,
+   "line": "Unfortunately, total isolation backfired fast because human brains get weird when they sit in silence.",
+   "note": "CEO clutching ears as sensory deprivation hits"
+  },
+  {
+   "id": "S5",
+   "size": "insert",
+   "key": 15,
+   "len": 171,
+   "first": 614,
+   "line": "Trapped alone with their ticking clocks, terrified bosses accidentally sent their life savings to fake emails.",
+   "note": "Laptop glowing in dark, wiring life savings to scammer"
+  },
+  {
+   "id": "S6",
+   "size": "medium",
+   "key": 15,
+   "len": 153,
+   "first": 785,
+   "line": "Supermarkets set up scanners at their front doors, banning anyone with under twenty-four hours left.",
+   "note": "Supermarket entrance scanners banning short timers"
+  },
+  {
+   "id": "S7",
+   "size": "wide",
+   "key": 15,
+   "len": 162,
+   "first": 938,
+   "line": "Security guards pushed scared shoppers onto the street, causing loud shouting matches in the parking lot.",
+   "note": "Parking lot shouting match, guards pushing shoppers"
+  },
+  {
+   "id": "S8",
+   "size": "medium",
+   "key": 15,
+   "len": 136,
+   "first": 1100,
+   "line": "Pip walked down his quiet apartment hallway, and his frightened neighbors slammed their doors shut.",
+   "note": "Pip walks down hallway, neighbors slam doors"
+  },
+  {
+   "id": "S9",
+   "size": "insert",
+   "key": 15,
+   "len": 153,
+   "first": 1236,
+   "line": "People peeked through their peepholes, whispering about the dangerous red glow walking past their homes. Pip",
+   "note": "Peephole POV: Pip's red halo in dark hallway"
+  },
+  {
+   "id": "S10",
+   "size": "wide",
+   "key": 15,
+   "len": 138,
+   "first": 1389,
+   "line": "sat on his couch and watched his clock drop below forty-five minutes in total silence. His",
+   "note": "Pip on couch in dim apartment, timer under 45 mins"
+  },
+  {
+   "id": "S11",
+   "size": "close-up",
+   "key": 15,
+   "len": 123,
+   "first": 1527,
+   "line": "palms were dripping with cold sweat, and his fingers were shaking like dry leaves.",
+   "note": "Pip's trembling sweaty palms on knees"
+  },
+  {
+   "id": "S12",
+   "size": "medium",
+   "key": 15,
+   "len": 145,
+   "first": 1650,
+   "line": "Every muscle in his body told him to run, but running felt just as dangerous. He was completely",
+   "note": "Pip pacing by window like a trapped animal"
+  },
+  {
+   "id": "S13",
+   "size": "split screen",
+   "key": 15,
+   "len": 110,
+   "first": 1795,
+   "line": "trapped between his own racing thoughts and a timer that never stopped ticking.",
+   "note": "Split screen: racing thoughts vs ticking red timer"
+  },
+  {
+   "id": "S14",
+   "size": "wide window",
+   "key": 15,
+   "len": 68,
+   "first": 1905,
+   "line": "Outside his window, sirens wailed through",
+   "note": "Window view: blue and red sirens flashing on walls"
+  },
+  {
+   "id": "S15",
+   "size": "macro clock",
+   "key": 15,
+   "len": 45,
+   "first": 1973,
+   "line": "the night as another neighborhood fell into",
+   "note": "Timer counting down to 20 minutes"
+  },
+  {
+   "id": "S16",
+   "size": "hero medium",
+   "key": 15,
+   "len": 43,
+   "first": 2018,
+   "line": "panic.",
+   "note": "Pip in center of room facing the inevitable"
+  }
+ ],
+ "fx": [
+  {
+   "kind": "flash",
+   "f": 148
+  },
+  {
+   "kind": "shake",
+   "f": 940
+  },
+  {
+   "kind": "flash",
+   "f": 1907
+  }
+ ],
+ "audio": {
+  "voice": "ch4/voice.wav",
+  "sfx": "ch4/sfx.wav",
+  "voiceVol": 0.8,
+  "sfxVol": 0.7552,
+  "music": "ch4/music.wav",
+  "musicVol": 0.1439
+ }
+}

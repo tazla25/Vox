@@ -1,0 +1,144 @@
+{
+ "id": "Ch1",
+ "slug": "ch1",
+ "topic": "What if everyone had a visible timer counting down to their biggest mistake? - Chapter 1",
+ "title": [
+  "CHAPTER 1: THE DISCOVERY",
+  "COUNTDOWN TO YOUR BIGGEST MISTAKE"
+ ],
+ "accent": "MISTAKE",
+ "power": {
+  "word": "Timer.",
+  "rule": "a glowing digital countdown above everyone's head ticks toward their greatest mistake",
+  "look": "crimson digital glow and countdown HUD"
+ },
+ "voice": {
+  "provider": "edge-tts",
+  "voice": "en-US-ChristopherNeural",
+  "rate": "+12%"
+ },
+ "script": [
+  { "beat": "1", "text": "On a regular Tuesday morning, Pip walked outside and saw numbers floating above everyone's head." },
+  { "beat": "2", "text": "Every person on the sidewalk had a glowing digital timer ticking down in bright light." },
+  { "beat": "3", "text": "A barista pouring iced coffee had thirty-two years left on her calm green display." },
+  { "beat": "4", "text": "Across the street, a nervous dog walker had barely twelve seconds left on his forehead." },
+  { "beat": "5", "text": "Pip watched as the dog spotted a squirrel and yanked the leash with sudden force." },
+  { "beat": "6", "text": "The walker tripped hard, sending three hot coffees splashing right into a passing police car." },
+  { "beat": "7", "text": "Pip gasped, sprinted back into his apartment, and stared into his bathroom mirror with dread." },
+  { "beat": "8", "text": "His own numbers were glowing bright crimson, and they read exactly six days and fourteen hours." },
+  { "beat": "9", "text": "These floating digits were not counting down to the day you quietly pass away." },
+  { "beat": "10", "text": "Instead, they were counting down to the single biggest, most embarrassing mistake of your life." },
+  { "beat": "11", "text": "Wait, because it gets worse when you realize what that red glow actually means." },
+  { "beat": "12", "text": "The timer cannot be paused, covered with a hat, or hidden from anyone you meet." },
+  { "beat": "13", "text": "Pip gripped the cold sink and wondered what terrible blunder was waiting for his future." },
+  { "beat": "14", "text": "Now the entire world had to watch each other tick toward disaster every single second." },
+  { "beat": "15", "text": "And nobody knew whether trying to stop their mistake would only make it happen sooner." }
+ ],
+ "science": [
+  {
+   "claim": "Visible countdown timers create anticipatory stress and involuntary attention lock-on.",
+   "working": "Neuroimaging studies of anticipatory threat demonstrate hyper-activation of the anterior cingulate cortex and amygdala, generating cognitive tunnel vision.",
+   "source": "Cognitive Psychology; Wegner (1987) Ironic Processes."
+  }
+ ],
+ "gaps": {
+  "pairs": {
+   "head|Every": 0.22,
+   "light|A": 0.22,
+   "display|Across": 0.25,
+   "forehead|Pip": 0.22,
+   "force|The": 0.20,
+   "car|Pip": 0.30,
+   "dread|His": 0.30,
+   "hours|These": 0.35,
+   "away|Instead": 0.25,
+   "life|Wait": 0.35,
+   "means|The": 0.30,
+   "meet|Pip": 0.30,
+   "future|Now": 0.35,
+   "second|And": 0.30
+  }
+ },
+ "cast": [
+  "pipHood",
+  "mo",
+  "suit"
+ ],
+ "shots": [
+  { "id": "S1", "size": "wide", "set": "rooftop", "key": 15, "note": "Pip walks out front door and looks out at the street" },
+  { "id": "S2", "size": "medium", "set": "rooftop", "key": 15, "note": "Sidewalk view: pedestrians walking with floating digital timers" },
+  { "id": "S3", "size": "close-up", "set": "kitchen", "key": 15, "note": "Barista pouring coffee with green 32Y timer" },
+  { "id": "S4", "size": "medium", "set": "stairwell", "key": 15, "note": "Dog walker with flashing crimson 12s timer" },
+  { "id": "S5", "size": "low angle", "set": "stairwell", "key": 12, "note": "Dog lunges at squirrel, leash pulls taut" },
+  { "id": "S6", "size": "action impact", "set": "stairwell", "key": 15, "note": "Walker trips, coffees splash across windshield" },
+  { "id": "S7", "size": "fast dash", "set": "stairwell", "key": 14, "note": "Pip sprints frantically up stairs to apartment" },
+  { "id": "S8", "size": "medium", "set": "bedroom", "key": 15, "note": "Pip bursts into bathroom, staring at mirror" },
+  { "id": "S9", "size": "macro close-up", "set": "bedroom", "key": 18, "note": "Pip's forehead in mirror: pulsing crimson 6D 14H" },
+  { "id": "S10", "size": "wide", "set": "bedroom", "key": 16, "note": "Pip clutching head in dim dusk room" },
+  { "id": "S11", "size": "title concept", "set": "schematic", "key": 20, "note": "Dramatic red HUD: COUNTDOWN TO BIGGEST MISTAKE" },
+  { "id": "S12", "size": "close-up", "set": "bedroom", "key": 14, "note": "Pip's trembling hands and panicked wide eyes" },
+  { "id": "S13", "size": "medium", "set": "bedroom", "key": 16, "note": "Pip pulls beanie over forehead, red light shines through" },
+  { "id": "S14", "size": "top-down insert", "set": "kitchen", "key": 15, "note": "Pip gripping cold bathroom sink faucet, red reflection" },
+  { "id": "S15", "size": "wide cityscape", "set": "rooftop", "key": 20, "note": "Dusk city skyline with hundreds of ticking timer dots" },
+  { "id": "S16", "size": "hero close-up", "set": "bedroom", "key": 20, "note": "Pip staring directly into camera as timer ticks down" }
+ ],
+ "edit": [
+  { "shot": "S1", "at": "f:0" },
+  { "shot": "S2", "at": "Every" },
+  { "shot": "S3", "at": "barista" },
+  { "shot": "S4", "at": "Across" },
+  { "shot": "S5", "at": "watched" },
+  { "shot": "S6", "at": "tripped" },
+  { "shot": "S7", "at": "gasped" },
+  { "shot": "S8", "at": "stared" },
+  { "shot": "S9", "at": "numbers" },
+  { "shot": "S10", "at": "floating" },
+  { "shot": "S11", "at": "single" },
+  { "shot": "S12", "at": "Wait" },
+  { "shot": "S13", "at": "timer" },
+  { "shot": "S14", "at": "gripped" },
+  { "shot": "S15", "at": "world" },
+  { "shot": "S16", "at": "nobody" }
+ ],
+ "fx": [
+  { "at": "tripped", "kind": "shake" },
+  { "at": "numbers", "kind": "flash" },
+  { "at": "single", "kind": "flash" },
+  { "at": "single+2", "kind": "shake" }
+ ],
+ "sound": {
+  "clips": {
+   "title_boom": [ "a cinematic whoosh rising into a deep boom impact", 1.6 ],
+   "counter_tick": [ "a fast mechanical counter ticking up rapidly, digits rolling over, getting faster", 1.6 ],
+   "gasp": [ "two young people gasping in surprise at the same moment, cartoon, short", 0.8 ],
+   "shatter": [ "a ceramic coffee mug smashing on a wooden floor, shards scattering and liquid splash", 1.3 ],
+   "fall_whoosh": [ "a small object falling fast through the air, short soft whoosh", 0.6 ],
+   "drone_hit": [ "a dark ominous low drone hit, deep cinematic horror sting", 2.6 ],
+   "step": [ "a single sneaker footstep on a wooden stair, close", 0.5 ],
+   "sparkle": [ "a short bright magical sparkle twinkle, cartoon", 0.8 ],
+   "room_tone": [ "quiet indoor room tone in the evening, faint distant city hum, no voices", 12.5 ],
+   "roof_wind": [ "a gentle evening breeze on a city rooftop, distant traffic", 7.0 ],
+   "music": [ "playful quirky cartoon background music, pizzicato strings, glockenspiel and soft bass, light and curious, 110 bpm, no vocals", 17.0 ]
+  },
+  "events": [
+   [ "S1", "roof_wind", 0.25 ],
+   [ "Every", "counter_tick", 0.35 ],
+   [ "tripped", "fall_whoosh", 0.40 ],
+   [ "tripped+10", "shatter", 0.50 ],
+   [ "gasped", "gasp", 0.45 ],
+   [ "gasped+5", "step", 0.35 ],
+   [ "numbers", "title_boom", 0.60, "peak" ],
+   [ "single", "drone_hit", 0.65, "onset" ],
+   [ "gripped", "counter_tick", 0.40 ],
+   [ "world", "room_tone", 0.30 ]
+  ],
+  "music": {
+   "clip": "music",
+   "until": "single"
+  },
+  "levels": {
+   "sfx_lu": -2.0,
+   "music_lu": -11.0
+  }
+ }
+}

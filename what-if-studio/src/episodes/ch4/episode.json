@@ -1,0 +1,134 @@
+{
+ "id": "Ch4",
+ "slug": "ch4",
+ "topic": "What if everyone had a visible timer counting down to their biggest mistake? - Chapter 4",
+ "title": [
+  "CHAPTER 4: SOCIETY REACTS & ESCALATION",
+  "THE BUNKER TRAP AND SOCIAL BREAKDOWN"
+ ],
+ "accent": "BREAKDOWN",
+ "power": {
+  "word": "Panic.",
+  "rule": "isolation backfires as sensory deprivation accelerates cognitive breakdown",
+  "look": "crimson alert tint and strobing siren light"
+ },
+ "voice": {
+  "provider": "edge-tts",
+  "voice": "en-US-ChristopherNeural",
+  "rate": "+12%"
+ },
+ "script": [
+  { "beat": "1", "text": "When the scientist's report leaked online, it sparked wild panic across every major city." },
+  { "beat": "2", "text": "Rich people paid thousands of dollars to lock themselves inside quiet, padded basement rooms." },
+  { "beat": "3", "text": "They believed sitting alone in dark silence would protect them until their timers hit zero safely." },
+  { "beat": "4", "text": "Unfortunately, total isolation backfired fast because human brains get weird when they sit in silence." },
+  { "beat": "5", "text": "Trapped alone with their ticking clocks, terrified bosses accidentally sent their life savings to fake emails." },
+  { "beat": "6", "text": "Supermarkets set up scanners at their front doors, banning anyone with under twenty-four hours left." },
+  { "beat": "7", "text": "Security guards pushed scared shoppers onto the street, causing loud shouting matches in the parking lot." },
+  { "beat": "8", "text": "Pip walked down his quiet apartment hallway, and his frightened neighbors slammed their doors shut." },
+  { "beat": "9", "text": "People peeked through their peepholes, whispering about the dangerous red glow walking past their homes." },
+  { "beat": "10", "text": "Pip sat on his couch and watched his clock drop below forty-five minutes in total silence." },
+  { "beat": "11", "text": "His palms were dripping with cold sweat, and his fingers were shaking like dry leaves." },
+  { "beat": "12", "text": "Every muscle in his body told him to run, but running felt just as dangerous." },
+  { "beat": "13", "text": "He was completely trapped between his own racing thoughts and a timer that never stopped ticking." },
+  { "beat": "14", "text": "Outside his window, sirens wailed through the night as another neighborhood fell into panic." }
+ ],
+ "science": [
+  {
+   "claim": "Sensory deprivation and hyper-monitoring in isolation induce rapid cognitive fatigue and catastrophic decision errors.",
+   "working": "Isolation chamber research demonstrates that removing external stimuli forces full attention onto internal panic, causing hallucinations, extreme impulsivity, and executive dysfunction within hours.",
+   "source": "McGill University Sensory Deprivation Studies; Cognitive Neurodynamics."
+  }
+ ],
+ "gaps": {
+  "pairs": {
+   "city|Rich": 0.25,
+   "rooms|They": 0.25,
+   "safely|Unfortunately": 0.30,
+   "silence|Trapped": 0.25,
+   "emails|Supermarkets": 0.30,
+   "left|Security": 0.25,
+   "lot|Pip": 0.30,
+   "shut|People": 0.25,
+   "homes|Pip": 0.30,
+   "silence|His": 0.25,
+   "leaves|Every": 0.25,
+   "dangerous|He": 0.25,
+   "ticking|Outside": 0.30
+  }
+ },
+ "cast": [
+  "pipHood",
+  "suit",
+  "mo"
+ ],
+ "shots": [
+  { "id": "S1", "size": "wide", "set": "rooftop", "key": 15, "note": "Citywide panic news broadcast ticker" },
+  { "id": "S2", "size": "medium", "set": "study", "key": 15, "note": "Steel vault bunker door locking tightly" },
+  { "id": "S3", "size": "wide", "set": "study", "key": 15, "note": "Rich CEO sitting alone in dark padded room" },
+  { "id": "S4", "size": "close-up", "set": "study", "key": 15, "note": "CEO clutching ears as sensory deprivation hits" },
+  { "id": "S5", "size": "insert", "set": "schematic", "key": 15, "note": "Laptop glowing in dark, wiring life savings to scammer" },
+  { "id": "S6", "size": "medium", "set": "kitchen", "key": 15, "note": "Supermarket entrance scanners banning short timers" },
+  { "id": "S7", "size": "wide", "set": "rooftop", "key": 15, "note": "Parking lot shouting match, guards pushing shoppers" },
+  { "id": "S8", "size": "medium", "set": "stairwell", "key": 15, "note": "Pip walks down hallway, neighbors slam doors" },
+  { "id": "S9", "size": "insert", "set": "stairwell", "key": 15, "note": "Peephole POV: Pip's red halo in dark hallway" },
+  { "id": "S10", "size": "wide", "set": "bedroom", "key": 15, "note": "Pip on couch in dim apartment, timer under 45 mins" },
+  { "id": "S11", "size": "close-up", "set": "bedroom", "key": 15, "note": "Pip's trembling sweaty palms on knees" },
+  { "id": "S12", "size": "medium", "set": "bedroom", "key": 15, "note": "Pip pacing by window like a trapped animal" },
+  { "id": "S13", "size": "split screen", "set": "schematic", "key": 15, "note": "Split screen: racing thoughts vs ticking red timer" },
+  { "id": "S14", "size": "wide window", "set": "bedroom", "key": 15, "note": "Window view: blue and red sirens flashing on walls" },
+  { "id": "S15", "size": "macro clock", "set": "schematic", "key": 15, "note": "Timer counting down to 20 minutes" },
+  { "id": "S16", "size": "hero medium", "set": "bedroom", "key": 15, "note": "Pip in center of room facing the inevitable" }
+ ],
+ "edit": [
+  { "shot": "S1", "at": "f:0" },
+  { "shot": "S2", "at": "Rich" },
+  { "shot": "S3", "at": "believed" },
+  { "shot": "S4", "at": "Unfortunately" },
+  { "shot": "S5", "at": "Trapped" },
+  { "shot": "S6", "at": "Supermarkets" },
+  { "shot": "S7", "at": "Security" },
+  { "shot": "S8", "at": "Pip" },
+  { "shot": "S9", "at": "People" },
+  { "shot": "S10", "at": "sat" },
+  { "shot": "S11", "at": "palms" },
+  { "shot": "S12", "at": "Every" },
+  { "shot": "S13", "at": "trapped" },
+  { "shot": "S14", "at": "Outside" },
+  { "shot": "S15", "at": "night" },
+  { "shot": "S16", "at": "panic" }
+ ],
+ "fx": [
+  { "at": "Rich", "kind": "flash" },
+  { "at": "Security", "kind": "shake" },
+  { "at": "Outside", "kind": "flash" }
+ ],
+ "sound": {
+  "clips": {
+   "title_boom": [ "a cinematic whoosh rising into a deep boom impact", 1.6 ],
+   "counter_tick": [ "a fast mechanical counter ticking up rapidly, digits rolling over, getting faster", 1.6 ],
+   "drone_hit": [ "a dark ominous low drone hit, deep cinematic horror sting", 2.6 ],
+   "switch_off": [ "a heavy electrical breaker switching off with a dull clunk", 0.5 ],
+   "room_tone": [ "quiet indoor room tone in the evening, faint distant city hum, no voices", 12.5 ],
+   "roof_wind": [ "a gentle evening breeze on a city rooftop, distant traffic", 7.0 ],
+   "music": [ "playful quirky cartoon background music, pizzicato strings, glockenspiel and soft bass, light and curious, 110 bpm, no vocals", 17.0 ]
+  },
+  "events": [
+   [ "S1", "roof_wind", 0.25 ],
+   [ "Rich", "switch_off", 0.50 ],
+   [ "Trapped", "counter_tick", 0.40 ],
+   [ "Security", "drone_hit", 0.60, "onset" ],
+   [ "Pip", "counter_tick", 0.35 ],
+   [ "sat", "room_tone", 0.30 ],
+   [ "Outside", "title_boom", 0.60, "peak" ]
+  ],
+  "music": {
+   "clip": "music",
+   "until": "Trapped"
+  },
+  "levels": {
+   "sfx_lu": -2.0,
+   "music_lu": -11.0
+  }
+ }
+}

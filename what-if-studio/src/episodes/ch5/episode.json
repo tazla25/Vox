@@ -1,0 +1,126 @@
+{
+ "id": "Ch5",
+ "slug": "ch5",
+ "topic": "What if everyone had a visible timer counting down to their biggest mistake? - Chapter 5",
+ "title": [
+  "CHAPTER 5: CLIMAX & RESOLUTION",
+  "BREAKING THE TARGET FIXATION TRAP"
+ ],
+ "accent": "RESOLUTION",
+ "power": {
+  "word": "Release.",
+  "rule": "deliberately choosing a harmless mistake breaks the cycle of target fixation",
+  "look": "golden burst of sparks and warm relief lighting"
+ },
+ "voice": {
+  "provider": "edge-tts",
+  "voice": "en-US-ChristopherNeural",
+  "rate": "+12%"
+ },
+ "script": [
+  { "beat": "1", "text": "With only twelve minutes left on his clock, Pip sat on his living room floor." },
+  { "beat": "2", "text": "His heart pounded against his ribs like a frightened bird trying to break free." },
+  { "beat": "3", "text": "If he ran outside, target fixation might cause him to step into oncoming traffic." },
+  { "beat": "4", "text": "If he stayed inside, his shaking hands might knock over a heater and start a fire." },
+  { "beat": "5", "text": "With thirty seconds remaining, Pip remembered what the scientist said about target fixation and fear." },
+  { "beat": "6", "text": "You cannot beat a bad thought by running away; you must pick your own target." },
+  { "beat": "7", "text": "He pulled out his phone, opened a chat, and typed out a silly, embarrassing secret." },
+  { "beat": "8", "text": "He confessed to his crush that he wore mismatched cartoon socks on their first date." },
+  { "beat": "9", "text": "He tapped send just as his glowing forehead timer struck zero in a bright flash." },
+  { "beat": "10", "text": "The crimson numbers burst into harmless little sparks and vanished from his forehead forever." },
+  { "beat": "11", "text": "He made his biggest mistake on his own terms without ruining his life or job." },
+  { "beat": "12", "text": "His crush texted back a laughing face, and the heavy weight was finally lifted away." },
+  { "beat": "13", "text": "If a glowing countdown appeared above your head tomorrow morning, would you look in the mirror?" },
+  { "beat": "14", "text": "Or would you rather live in peaceful ignorance and let your mistakes happen naturally?" }
+ ],
+ "science": [
+  {
+   "claim": "Controlled exposure and intentional micro-errors defuse cognitive avoidance panic.",
+   "working": "Paradoxical intention and cognitive re-targeting eliminate anticipatory performance anxiety by transforming an involuntary feared catastrophe into a voluntary, harmless action.",
+   "source": "Viktor Frankl (Paradoxical Intention); American Journal of Psychotherapy."
+  }
+ ],
+ "gaps": {
+  "pairs": {
+   "floor|His": 0.25,
+   "free|If": 0.25,
+   "traffic|If": 0.25,
+   "fire|With": 0.25,
+   "fear|You": 0.25,
+   "target|He": 0.25,
+   "secret|He": 0.25,
+   "date|He": 0.25,
+   "flash|The": 0.30,
+   "forever|He": 0.30,
+   "job|His": 0.25,
+   "away|If": 0.30,
+   "mirror|Or": 0.30
+  }
+ },
+ "cast": [
+  "pipHood",
+  "sis"
+ ],
+ "shots": [
+  { "id": "S1", "size": "wide", "set": "bedroom", "key": 15, "note": "Pip cross-legged on living room rug, 12 minutes left" },
+  { "id": "S2", "size": "close-up", "set": "bedroom", "key": 15, "note": "Pip's racing heartbeat, panic in his throat" },
+  { "id": "S3", "size": "insert flash", "set": "rooftop", "key": 15, "note": "Imagined traffic intersection crash" },
+  { "id": "S4", "size": "insert flash", "set": "bedroom", "key": 15, "note": "Imagined space heater sparking near curtain" },
+  { "id": "S5", "size": "close-up", "set": "bedroom", "key": 15, "note": "30 seconds left: clarity strikes Pip" },
+  { "id": "S6", "size": "medium", "set": "bedroom", "key": 15, "note": "Pip breathes slow, reaches for phone" },
+  { "id": "S7", "size": "insert", "set": "schematic", "key": 15, "note": "Typing embarrassing secret on phone" },
+  { "id": "S8", "size": "insert", "set": "schematic", "key": 15, "note": "Message: cartoon socks confession preview" },
+  { "id": "S9", "size": "macro send", "set": "schematic", "key": 15, "note": "Finger taps send at 00:00:00 flash" },
+  { "id": "S10", "size": "hero burst", "set": "bedroom", "key": 20, "note": "Golden sparkles burst from forehead, red vanishes" },
+  { "id": "S11", "size": "medium", "set": "bedroom", "key": 15, "note": "Pip smiles in warm relief, life intact" },
+  { "id": "S12", "size": "insert", "set": "schematic", "key": 15, "note": "Crush reply with laughing emoji" },
+  { "id": "S13", "size": "hero direct", "set": "bedroom", "key": 15, "note": "Pip addresses camera: would you look?" },
+  { "id": "S14", "size": "wide skyline", "set": "rooftop", "key": 20, "note": "Dusk city skyline, final comment question card" }
+ ],
+ "edit": [
+  { "shot": "S1", "at": "f:0" },
+  { "shot": "S2", "at": "heart" },
+  { "shot": "S3", "at": "outside" },
+  { "shot": "S4", "at": "inside" },
+  { "shot": "S5", "at": "thirty" },
+  { "shot": "S6", "at": "cannot" },
+  { "shot": "S7", "at": "pulled" },
+  { "shot": "S8", "at": "confessed" },
+  { "shot": "S9", "at": "tapped" },
+  { "shot": "S10", "at": "crimson" },
+  { "shot": "S11", "at": "made" },
+  { "shot": "S12", "at": "crush" },
+  { "shot": "S13", "at": "glowing" },
+  { "shot": "S14", "at": "rather" }
+ ],
+ "fx": [
+  { "at": "tapped", "kind": "flash" },
+  { "at": "crimson", "kind": "flash" },
+  { "at": "crimson+2", "kind": "shake" }
+ ],
+ "sound": {
+  "clips": {
+   "title_boom": [ "a cinematic whoosh rising into a deep boom impact", 1.6 ],
+   "counter_tick": [ "a fast mechanical counter ticking up rapidly, digits rolling over, getting faster", 1.6 ],
+   "copy_click": [ "a crisp satisfying computer copy click with a tiny soft digital chime, short", 0.5 ],
+   "sparkle": [ "a short bright magical sparkle twinkle, cartoon", 0.8 ],
+   "ding": [ "a correct answer ding, bright bell chime", 0.8 ],
+   "room_tone": [ "quiet indoor room tone in the evening, faint distant city hum, no voices", 12.5 ],
+   "roof_wind": [ "a gentle evening breeze on a city rooftop, distant traffic", 7.0 ],
+   "music": [ "playful quirky cartoon background music, pizzicato strings, glockenspiel and soft bass, light and curious, 110 bpm, no vocals", 17.0 ]
+  },
+  "events": [
+   [ "S1", "room_tone", 0.30 ],
+   [ "thirty", "counter_tick", 0.40 ],
+   [ "pulled", "copy_click", 0.35 ],
+   [ "tapped", "title_boom", 0.55, "peak" ],
+   [ "crimson", "sparkle", 0.60 ],
+   [ "crush", "ding", 0.45 ],
+   [ "glowing", "music", 0.30 ]
+  ],
+  "levels": {
+   "sfx_lu": -2.0,
+   "music_lu": -11.0
+  }
+ }
+}

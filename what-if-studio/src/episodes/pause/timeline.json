@@ -1,0 +1,321 @@
+{
+ "slug": "pause",
+ "title": "WHAT IF YOU COULD PAUSE EVERYONE BUT YOU?",
+ "fps": 30,
+ "total": 757,
+ "segments": [
+  {
+   "shot": "S1",
+   "a": 0,
+   "b": 44,
+   "t0": 0,
+   "t1": 44,
+   "line": "Mo grabs the cookie."
+  },
+  {
+   "shot": "S2",
+   "a": 44,
+   "b": 71,
+   "t0": 0,
+   "t1": 27,
+   "line": "Pause.",
+   "look": "pause"
+  },
+  {
+   "shot": "S3",
+   "a": 71,
+   "b": 98,
+   "t0": 0,
+   "t1": 27,
+   "line": "Yours now."
+  },
+  {
+   "shot": "S4",
+   "a": 98,
+   "b": 142,
+   "t0": 0,
+   "t1": 44,
+   "line": "Pop quiz in class."
+  },
+  {
+   "shot": "S5",
+   "a": 142,
+   "b": 172,
+   "t0": 0,
+   "t1": 30,
+   "line": "Pause.",
+   "look": "pause"
+  },
+  {
+   "shot": "S6",
+   "a": 172,
+   "b": 216,
+   "t0": 0,
+   "t1": 44,
+   "line": "A plus. Pause your best"
+  },
+  {
+   "shot": "S7",
+   "a": 216,
+   "b": 249,
+   "t0": 0,
+   "t1": 33,
+   "line": "friend. He doesn't"
+  },
+  {
+   "shot": "S8",
+   "a": 249,
+   "b": 270,
+   "t0": 0,
+   "t1": 21,
+   "line": "breathe.",
+   "look": "pause"
+  },
+  {
+   "shot": "S9",
+   "a": 270,
+   "b": 296,
+   "t0": 0,
+   "t1": 26,
+   "line": "Creepy."
+  },
+  {
+   "shot": "S10",
+   "a": 296,
+   "b": 353,
+   "t0": 0,
+   "t1": 57,
+   "line": "What if you could pause everyone but you?"
+  },
+  {
+   "shot": "S11",
+   "a": 353,
+   "b": 395,
+   "t0": 0,
+   "t1": 42,
+   "line": "Sounds amazing."
+  },
+  {
+   "shot": "S12",
+   "a": 395,
+   "b": 460,
+   "t0": 0,
+   "t1": 65,
+   "line": "One catch: the power grid balances"
+  },
+  {
+   "shot": "S13",
+   "a": 460,
+   "b": 516,
+   "t0": 0,
+   "t1": 56,
+   "line": "frequency sixty times a second."
+  },
+  {
+   "shot": "S14",
+   "a": 516,
+   "b": 626,
+   "t0": 0,
+   "t1": 110,
+   "line": "Without operators, relays trip the whole planet in thirty seconds."
+  },
+  {
+   "shot": "S15",
+   "a": 626,
+   "b": 683,
+   "t0": 0,
+   "t1": 57,
+   "line": "Blackout. That's real."
+  },
+  {
+   "shot": "S16",
+   "a": 683,
+   "b": 757,
+   "t0": 0,
+   "t1": 74,
+   "line": "And you don't know how to restart it."
+  }
+ ],
+ "shots": [
+  {
+   "id": "S1",
+   "size": "medium",
+   "key": 10,
+   "len": 44,
+   "first": 0,
+   "line": "Mo grabs the cookie.",
+   "note": "Mo reaches for the cookie on the kitchen island"
+  },
+  {
+   "id": "S2",
+   "size": "macro insert, high angle",
+   "key": 8,
+   "len": 27,
+   "first": 44,
+   "line": "Pause.",
+   "note": "Mo's hand freezes mid-air right above the cookie; PAUSE look"
+  },
+  {
+   "id": "S3",
+   "size": "close-up",
+   "key": 12,
+   "len": 27,
+   "first": 71,
+   "line": "Yours now.",
+   "note": "Pip slides the cookie away with a smug grin"
+  },
+  {
+   "id": "S4",
+   "size": "wide",
+   "key": 14,
+   "len": 44,
+   "first": 98,
+   "line": "Pop quiz in class.",
+   "note": "Teacher by the blackboard, pop quiz announced"
+  },
+  {
+   "id": "S5",
+   "size": "over the shoulder",
+   "key": 12,
+   "len": 30,
+   "first": 142,
+   "line": "Pause.",
+   "note": "PAUSE: the whole classroom freezes solid mid-motion"
+  },
+  {
+   "id": "S6",
+   "size": "insert, top-down",
+   "key": 10,
+   "len": 44,
+   "first": 172,
+   "line": "A plus. Pause your best",
+   "note": "A plus test paper with red mark and gold star"
+  },
+  {
+   "id": "S7",
+   "size": "medium",
+   "key": 14,
+   "len": 33,
+   "first": 216,
+   "line": "friend. He doesn't",
+   "note": "Mo talking mid-step on stairs, arm gesturing"
+  },
+  {
+   "id": "S8",
+   "size": "extreme close-up",
+   "key": 10,
+   "len": 21,
+   "first": 249,
+   "line": "breathe.",
+   "note": "Mo's face completely frozen, eyes unblinking, eerie"
+  },
+  {
+   "id": "S9",
+   "size": "low angle, medium",
+   "key": 12,
+   "len": 26,
+   "first": 270,
+   "line": "Creepy.",
+   "note": "Pip steps back, worried look at the uncanny stillness"
+  },
+  {
+   "id": "S10",
+   "size": "title, wide",
+   "key": 30,
+   "len": 57,
+   "first": 296,
+   "line": "What if you could pause everyone but you?",
+   "note": "Title card over the wide dusk city rooftop"
+  },
+  {
+   "id": "S11",
+   "size": "medium",
+   "key": 14,
+   "len": 42,
+   "first": 353,
+   "line": "Sounds amazing.",
+   "note": "Pip smiles against the frozen skyline: sounds amazing"
+  },
+  {
+   "id": "S12",
+   "size": "schematic",
+   "key": 18,
+   "len": 65,
+   "first": 395,
+   "line": "One catch: the power grid balances",
+   "note": "Dark blueprint grid: power plant icons on the grid"
+  },
+  {
+   "id": "S13",
+   "size": "schematic, insert",
+   "key": 15,
+   "len": 56,
+   "first": 460,
+   "line": "frequency sixty times a second.",
+   "note": "Sine wave and frequency counter: 60.00 Hz"
+  },
+  {
+   "id": "S14",
+   "size": "schematic, macro",
+   "key": 16,
+   "len": 110,
+   "first": 516,
+   "line": "Without operators, relays trip the whole planet in thirty seconds.",
+   "note": "Frequency plunges to 59.2 Hz, warning TRIP RELAYS"
+  },
+  {
+   "id": "S15",
+   "size": "wide",
+   "key": 24,
+   "len": 57,
+   "first": 626,
+   "line": "Blackout. That's real.",
+   "note": "Cascading blackout sweeps across the city skyline"
+  },
+  {
+   "id": "S16",
+   "size": "close-up, low angle",
+   "key": 20,
+   "len": 74,
+   "first": 683,
+   "line": "And you don't know how to restart it.",
+   "note": "Pip frozen in shock in the pitch darkness, slow push in"
+  }
+ ],
+ "fx": [
+  {
+   "kind": "flash",
+   "color": "#7FD4FF",
+   "f": 46
+  },
+  {
+   "kind": "flash",
+   "color": "#7FD4FF",
+   "f": 144
+  },
+  {
+   "kind": "flash",
+   "color": "#FFF3DC",
+   "f": 298
+  },
+  {
+   "kind": "flash",
+   "color": "#FF3344",
+   "f": 628
+  },
+  {
+   "kind": "shake",
+   "len": 10,
+   "amp": 12,
+   "f": 628
+  }
+ ],
+ "audio": {
+  "voiceVol": 0.8,
+  "sfxVol": 0.7728,
+  "musicVol": 0.1423,
+  "voice": "pause/voice.wav",
+  "sfx": "pause/sfx.wav",
+  "music": "pause/music.wav"
+ }
+}

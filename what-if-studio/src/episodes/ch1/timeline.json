@@ -1,0 +1,308 @@
+{
+ "slug": "ch1",
+ "title": "CHAPTER 1: THE DISCOVERY COUNTDOWN TO YOUR BIGGEST MISTAKE",
+ "fps": 30,
+ "total": 2016,
+ "segments": [
+  {
+   "shot": "S1",
+   "a": 0,
+   "b": 146,
+   "t0": 0,
+   "t1": 146,
+   "line": "On a regular Tuesday morning, Pip walked outside and saw numbers floating above everyone's head."
+  },
+  {
+   "shot": "S2",
+   "a": 146,
+   "b": 272,
+   "t0": 0,
+   "t1": 126,
+   "line": "Every person on the sidewalk had a glowing digital timer ticking down in bright light."
+  },
+  {
+   "shot": "S3",
+   "a": 272,
+   "b": 399,
+   "t0": 0,
+   "t1": 127,
+   "line": "A barista pouring iced coffee had thirty-two years left on her calm green display."
+  },
+  {
+   "shot": "S4",
+   "a": 399,
+   "b": 545,
+   "t0": 0,
+   "t1": 146,
+   "line": "Across the street, a nervous dog walker had barely twelve seconds left on his forehead. Pip"
+  },
+  {
+   "shot": "S5",
+   "a": 545,
+   "b": 673,
+   "t0": 0,
+   "t1": 128,
+   "line": "watched as the dog spotted a squirrel and yanked the leash with sudden force. The walker"
+  },
+  {
+   "shot": "S6",
+   "a": 673,
+   "b": 815,
+   "t0": 0,
+   "t1": 142,
+   "line": "tripped hard, sending three hot coffees splashing right into a passing police car. Pip"
+  },
+  {
+   "shot": "S7",
+   "a": 815,
+   "b": 888,
+   "t0": 0,
+   "t1": 73,
+   "line": "gasped, sprinted back into his apartment,"
+  },
+  {
+   "shot": "S8",
+   "a": 888,
+   "b": 966,
+   "t0": 0,
+   "t1": 78,
+   "line": "and stared into his bathroom mirror with dread. His own"
+  },
+  {
+   "shot": "S9",
+   "a": 966,
+   "b": 1112,
+   "t0": 0,
+   "t1": 146,
+   "line": "numbers were glowing bright crimson, and they read exactly six days and fourteen hours. These"
+  },
+  {
+   "shot": "S10",
+   "a": 1112,
+   "b": 1272,
+   "t0": 0,
+   "t1": 160,
+   "line": "floating digits were not counting down to the day you quietly pass away. Instead, they were counting down to"
+  },
+  {
+   "shot": "S11",
+   "a": 1272,
+   "b": 1364,
+   "t0": 0,
+   "t1": 92,
+   "line": "the single biggest, most embarrassing mistake of your life."
+  },
+  {
+   "shot": "S12",
+   "a": 1364,
+   "b": 1493,
+   "t0": 0,
+   "t1": 129,
+   "line": "Wait, because it gets worse when you realize what that red glow actually means."
+  },
+  {
+   "shot": "S13",
+   "a": 1493,
+   "b": 1623,
+   "t0": 0,
+   "t1": 130,
+   "line": "The timer cannot be paused, covered with a hat, or hidden from anyone you meet. Pip"
+  },
+  {
+   "shot": "S14",
+   "a": 1623,
+   "b": 1772,
+   "t0": 0,
+   "t1": 149,
+   "line": "gripped the cold sink and wondered what terrible blunder was waiting for his future. Now the entire"
+  },
+  {
+   "shot": "S15",
+   "a": 1772,
+   "b": 1886,
+   "t0": 0,
+   "t1": 114,
+   "line": "world had to watch each other tick toward disaster every single second. And"
+  },
+  {
+   "shot": "S16",
+   "a": 1886,
+   "b": 2016,
+   "t0": 0,
+   "t1": 130,
+   "line": "nobody knew whether trying to stop their mistake would only make it happen sooner."
+  }
+ ],
+ "shots": [
+  {
+   "id": "S1",
+   "size": "wide",
+   "key": 15,
+   "len": 146,
+   "first": 0,
+   "line": "On a regular Tuesday morning, Pip walked outside and saw numbers floating above everyone's head.",
+   "note": "Pip walks out front door and looks out at the street"
+  },
+  {
+   "id": "S2",
+   "size": "medium",
+   "key": 15,
+   "len": 126,
+   "first": 146,
+   "line": "Every person on the sidewalk had a glowing digital timer ticking down in bright light.",
+   "note": "Sidewalk view: pedestrians walking with floating digital timers"
+  },
+  {
+   "id": "S3",
+   "size": "close-up",
+   "key": 15,
+   "len": 127,
+   "first": 272,
+   "line": "A barista pouring iced coffee had thirty-two years left on her calm green display.",
+   "note": "Barista pouring coffee with green 32Y timer"
+  },
+  {
+   "id": "S4",
+   "size": "medium",
+   "key": 15,
+   "len": 146,
+   "first": 399,
+   "line": "Across the street, a nervous dog walker had barely twelve seconds left on his forehead. Pip",
+   "note": "Dog walker with flashing crimson 12s timer"
+  },
+  {
+   "id": "S5",
+   "size": "low angle",
+   "key": 12,
+   "len": 128,
+   "first": 545,
+   "line": "watched as the dog spotted a squirrel and yanked the leash with sudden force. The walker",
+   "note": "Dog lunges at squirrel, leash pulls taut"
+  },
+  {
+   "id": "S6",
+   "size": "action impact",
+   "key": 15,
+   "len": 142,
+   "first": 673,
+   "line": "tripped hard, sending three hot coffees splashing right into a passing police car. Pip",
+   "note": "Walker trips, coffees splash across windshield"
+  },
+  {
+   "id": "S7",
+   "size": "fast dash",
+   "key": 14,
+   "len": 73,
+   "first": 815,
+   "line": "gasped, sprinted back into his apartment,",
+   "note": "Pip sprints frantically up stairs to apartment"
+  },
+  {
+   "id": "S8",
+   "size": "medium",
+   "key": 15,
+   "len": 78,
+   "first": 888,
+   "line": "and stared into his bathroom mirror with dread. His own",
+   "note": "Pip bursts into bathroom, staring at mirror"
+  },
+  {
+   "id": "S9",
+   "size": "macro close-up",
+   "key": 18,
+   "len": 146,
+   "first": 966,
+   "line": "numbers were glowing bright crimson, and they read exactly six days and fourteen hours. These",
+   "note": "Pip's forehead in mirror: pulsing crimson 6D 14H"
+  },
+  {
+   "id": "S10",
+   "size": "wide",
+   "key": 16,
+   "len": 160,
+   "first": 1112,
+   "line": "floating digits were not counting down to the day you quietly pass away. Instead, they were counting down to",
+   "note": "Pip clutching head in dim dusk room"
+  },
+  {
+   "id": "S11",
+   "size": "title concept",
+   "key": 20,
+   "len": 92,
+   "first": 1272,
+   "line": "the single biggest, most embarrassing mistake of your life.",
+   "note": "Dramatic red HUD: COUNTDOWN TO BIGGEST MISTAKE"
+  },
+  {
+   "id": "S12",
+   "size": "close-up",
+   "key": 14,
+   "len": 129,
+   "first": 1364,
+   "line": "Wait, because it gets worse when you realize what that red glow actually means.",
+   "note": "Pip's trembling hands and panicked wide eyes"
+  },
+  {
+   "id": "S13",
+   "size": "medium",
+   "key": 16,
+   "len": 130,
+   "first": 1493,
+   "line": "The timer cannot be paused, covered with a hat, or hidden from anyone you meet. Pip",
+   "note": "Pip pulls beanie over forehead, red light shines through"
+  },
+  {
+   "id": "S14",
+   "size": "top-down insert",
+   "key": 15,
+   "len": 149,
+   "first": 1623,
+   "line": "gripped the cold sink and wondered what terrible blunder was waiting for his future. Now the entire",
+   "note": "Pip gripping cold bathroom sink faucet, red reflection"
+  },
+  {
+   "id": "S15",
+   "size": "wide cityscape",
+   "key": 20,
+   "len": 114,
+   "first": 1772,
+   "line": "world had to watch each other tick toward disaster every single second. And",
+   "note": "Dusk city skyline with hundreds of ticking timer dots"
+  },
+  {
+   "id": "S16",
+   "size": "hero close-up",
+   "key": 20,
+   "len": 130,
+   "first": 1886,
+   "line": "nobody knew whether trying to stop their mistake would only make it happen sooner.",
+   "note": "Pip staring directly into camera as timer ticks down"
+  }
+ ],
+ "fx": [
+  {
+   "kind": "shake",
+   "f": 675
+  },
+  {
+   "kind": "flash",
+   "f": 89
+  },
+  {
+   "kind": "flash",
+   "f": 1274
+  },
+  {
+   "kind": "shake",
+   "f": 1276
+  }
+ ],
+ "audio": {
+  "voice": "ch1/voice.wav",
+  "sfx": "ch1/sfx.wav",
+  "voiceVol": 0.8,
+  "sfxVol": 0.7552,
+  "music": "ch1/music.wav",
+  "musicVol": 0.1439
+ }
+}

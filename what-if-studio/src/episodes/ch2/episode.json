@@ -1,0 +1,139 @@
+{
+ "id": "Ch2",
+ "slug": "ch2",
+ "topic": "What if everyone had a visible timer counting down to their biggest mistake? - Chapter 2",
+ "title": [
+  "CHAPTER 2: GAMING THE SYSTEM",
+  "THE SOCIAL SORTING APOCALYPSE"
+ ],
+ "accent": "SYSTEM",
+ "power": {
+  "word": "Sorting.",
+  "rule": "society uses timers to discriminate, reject, and isolate short-timer individuals",
+  "look": "amber warning tint and scanning laser overlay"
+ },
+ "voice": {
+  "provider": "edge-tts",
+  "voice": "en-US-ChristopherNeural",
+  "rate": "+12%"
+ },
+ "script": [
+  { "beat": "1", "text": "Within two days, people found cruel ways to use the visible timers against each other." },
+  { "beat": "2", "text": "Bosses checked foreheads during job interviews and refused to hire anyone with under a year left." },
+  { "beat": "3", "text": "Banks would not approve home loans for couples whose digital clocks showed less than five years." },
+  { "beat": "4", "text": "Pip watched his best friend Mo land a huge promotion at their busy accounting office." },
+  { "beat": "5", "text": "Mo had forty-two peaceful years on his forehead, so the manager trusted him with everything." },
+  { "beat": "6", "text": "Meanwhile, dating apps added a filter so people could hide users with short timers completely." },
+  { "beat": "7", "text": "Landlords kicked out tenants whose displays turned yellow, because they feared broken pipes or missed rent." },
+  { "beat": "8", "text": "People with low clocks were treated like walking human bombs ready to explode at any moment." },
+  { "beat": "9", "text": "Store clerks watched them nervously, and strangers crossed the street just to stay away from them." },
+  { "beat": "10", "text": "Pip wore a thick winter hat to work, but the glowing red light shone right through." },
+  { "beat": "11", "text": "His timer dropped below four days, and every small move felt like stepping on thin ice." },
+  { "beat": "12", "text": "He wondered if one wrong word would ruin his job before the weekend even started." },
+  { "beat": "13", "text": "The social pressure was growing fast, and nobody in the city felt safe around him anymore." },
+  { "beat": "14", "text": "Even his oldest friends made polite excuses whenever he asked to hang out after work." }
+ ],
+ "science": [
+  {
+   "claim": "Predictive prejudice and statistical discrimination rapidly create social sorting hierarchies.",
+   "working": "Social psychological experiments on stereotyping and out-group derogation show that visible proxies for risk lead to systemic ostracism.",
+   "source": "Journal of Personality and Social Psychology; Arrow (1973) Theory of Statistical Discrimination."
+  }
+ ],
+ "gaps": {
+  "pairs": {
+   "other|Bosses": 0.25,
+   "left|Banks": 0.25,
+   "years|Pip": 0.25,
+   "office|Mo": 0.25,
+   "everything|Meanwhile": 0.30,
+   "completely|Landlords": 0.30,
+   "rent|People": 0.30,
+   "moment|Store": 0.25,
+   "them|Pip": 0.30,
+   "through|His": 0.25,
+   "ice|He": 0.25,
+   "started|The": 0.30,
+   "anymore|Even": 0.30
+  }
+ },
+ "cast": [
+  "pipHood",
+  "mo",
+  "suit",
+  "sis"
+ ],
+ "shots": [
+  { "id": "S1", "size": "wide", "set": "rooftop", "key": 15, "note": "City corporate lobby: people being sorted by timer length" },
+  { "id": "S2", "size": "medium", "set": "study", "key": 15, "note": "Job interview: Suit scans applicant forehead" },
+  { "id": "S3", "size": "close-up", "set": "study", "key": 15, "note": "Resume rejected stamp" },
+  { "id": "S4", "size": "medium", "set": "study", "key": 15, "note": "Bank loan desk, denied documents pushed back" },
+  { "id": "S5", "size": "medium", "set": "classroom", "key": 15, "note": "Mo gets huge promotion in accounting office" },
+  { "id": "S6", "size": "close-up", "set": "classroom", "key": 15, "note": "Mo handed keys and executive files" },
+  { "id": "S7", "size": "ui insert", "set": "schematic", "key": 15, "note": "Dating app filter: hide short timers" },
+  { "id": "S8", "size": "medium", "set": "stairwell", "key": 15, "note": "Yellow timer tenant evicted with cardboard boxes" },
+  { "id": "S9", "size": "wide", "set": "rooftop", "key": 15, "note": "Crowd visibly parting around a man with a red timer" },
+  { "id": "S10", "size": "medium", "set": "kitchen", "key": 15, "note": "Clerk eyeing customer with short timer warily" },
+  { "id": "S11", "size": "medium", "set": "classroom", "key": 15, "note": "Pip walks in with thick beanie, red glow piercing through" },
+  { "id": "S12", "size": "medium", "set": "study", "key": 15, "note": "Pip sitting at desk, thin ice feeling" },
+  { "id": "S13", "size": "close-up", "set": "study", "key": 15, "note": "Keyboard Enter key, trembling finger" },
+  { "id": "S14", "size": "medium", "set": "classroom", "key": 15, "note": "Office breakroom, colleagues whispering and backing away" },
+  { "id": "S15", "size": "ui insert", "set": "schematic", "key": 15, "note": "Text chat: friends making polite excuses" },
+  { "id": "S16", "size": "hero wide", "set": "rooftop", "key": 15, "note": "Pip standing completely isolated in evening city" }
+ ],
+ "edit": [
+  { "shot": "S1", "at": "f:0" },
+  { "shot": "S2", "at": "Bosses" },
+  { "shot": "S3", "at": "refused" },
+  { "shot": "S4", "at": "Banks" },
+  { "shot": "S5", "at": "Pip" },
+  { "shot": "S6", "at": "trusted" },
+  { "shot": "S7", "at": "Meanwhile" },
+  { "shot": "S8", "at": "Landlords" },
+  { "shot": "S9", "at": "People" },
+  { "shot": "S10", "at": "Store" },
+  { "shot": "S11", "at": "Pip" },
+  { "shot": "S12", "at": "timer" },
+  { "shot": "S13", "at": "wondered" },
+  { "shot": "S14", "at": "social" },
+  { "shot": "S15", "at": "Even" },
+  { "shot": "S16", "at": "asked" }
+ ],
+ "fx": [
+  { "at": "refused", "kind": "flash" },
+  { "at": "People", "kind": "shake" },
+  { "at": "timer", "kind": "flash" }
+ ],
+ "sound": {
+  "clips": {
+   "title_boom": [ "a cinematic whoosh rising into a deep boom impact", 1.6 ],
+   "counter_tick": [ "a fast mechanical counter ticking up rapidly, digits rolling over, getting faster", 1.6 ],
+   "copy_click": [ "a crisp satisfying computer copy click with a tiny soft digital chime, short", 0.5 ],
+   "drone_hit": [ "a dark ominous low drone hit, deep cinematic horror sting", 2.6 ],
+   "ding": [ "a correct answer ding, bright bell chime", 0.8 ],
+   "buzzer": [ "a game show wrong answer buzzer, short", 0.8 ],
+   "room_tone": [ "quiet indoor room tone in the evening, faint distant city hum, no voices", 12.5 ],
+   "roof_wind": [ "a gentle evening breeze on a city rooftop, distant traffic", 7.0 ],
+   "music": [ "playful quirky cartoon background music, pizzicato strings, glockenspiel and soft bass, light and curious, 110 bpm, no vocals", 17.0 ]
+  },
+  "events": [
+   [ "S1", "roof_wind", 0.25 ],
+   [ "Bosses", "counter_tick", 0.35 ],
+   [ "refused", "buzzer", 0.50 ],
+   [ "Pip", "ding", 0.40 ],
+   [ "Meanwhile", "copy_click", 0.35 ],
+   [ "People", "drone_hit", 0.50, "onset" ],
+   [ "Pip", "counter_tick", 0.40 ],
+   [ "wondered", "room_tone", 0.30 ],
+   [ "asked", "title_boom", 0.60, "peak" ]
+  ],
+  "music": {
+   "clip": "music",
+   "until": "People"
+  },
+  "levels": {
+   "sfx_lu": -2.0,
+   "music_lu": -11.0
+  }
+ }
+}

@@ -1,0 +1,22 @@
+# Node modules
+node_modules/
+what-if-studio/node_modules/
+
+# Build and render outputs
+what-if-studio/out/
+*.mp4
+*.m4a
+*.wav
+*.mp3
+
+# Caches & temporary files
+__pycache__/
+*.pyc
+.hyperframes/
+
+# Sub-repo
+what-if-animation/
+
+# Keep storyboard jpgs in renders/
+!renders/*.jpg
+

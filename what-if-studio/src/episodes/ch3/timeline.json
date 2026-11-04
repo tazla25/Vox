@@ -1,0 +1,308 @@
+{
+ "slug": "ch3",
+ "title": "CHAPTER 3: THE HIDDEN CATCH THE PSYCHOLOGY AND SCIENCE TWIST",
+ "fps": 30,
+ "total": 1779,
+ "segments": [
+  {
+   "shot": "S1",
+   "a": 0,
+   "b": 91,
+   "t0": 0,
+   "t1": 91,
+   "line": "Pip desperately wanted to stop his timer, so he visited a brain"
+  },
+  {
+   "shot": "S2",
+   "a": 91,
+   "b": 248,
+   "t0": 0,
+   "t1": 157,
+   "line": "scientist for help. The scientist told him that the timers were tied to how human brains handle fear."
+  },
+  {
+   "shot": "S3",
+   "a": 248,
+   "b": 409,
+   "t0": 0,
+   "t1": 161,
+   "line": "Way back in nineteen eighty-seven, a researcher named Daniel Wegner found a strange brain habit. He called"
+  },
+  {
+   "shot": "S4",
+   "a": 409,
+   "b": 570,
+   "t0": 0,
+   "t1": 161,
+   "line": "it ironic process theory, and it happens whenever you try not to fail. When you force yourself not to think about"
+  },
+  {
+   "shot": "S5",
+   "a": 570,
+   "b": 637,
+   "t0": 0,
+   "t1": 67,
+   "line": "a white bear, you think about it constantly."
+  },
+  {
+   "shot": "S6",
+   "a": 637,
+   "b": 786,
+   "t0": 0,
+   "t1": 149,
+   "line": "Fighter pilots call this target fixation, and it causes them to crash during fast flight. If"
+  },
+  {
+   "shot": "S7",
+   "a": 786,
+   "b": 901,
+   "t0": 0,
+   "t1": 115,
+   "line": "a pilot stares straight at a tall tree, his hands steer right into it."
+  },
+  {
+   "shot": "S8",
+   "a": 901,
+   "b": 1089,
+   "t0": 0,
+   "t1": 188,
+   "line": "The floating timers were not reading magic, but measuring the stress inside your own head. As the clock ticks toward zero, your"
+  },
+  {
+   "shot": "S9",
+   "a": 1089,
+   "b": 1188,
+   "t0": 0,
+   "t1": 99,
+   "line": "body floods with four times more stress hormone. That wave"
+  },
+  {
+   "shot": "S10",
+   "a": 1188,
+   "b": 1337,
+   "t0": 0,
+   "t1": 149,
+   "line": "of chemical panic shuts down your memory and makes your hands shake uncontrollably. So the timer does not"
+  },
+  {
+   "shot": "S11",
+   "a": 1337,
+   "b": 1408,
+   "t0": 0,
+   "t1": 71,
+   "line": "predict an accident waiting in the stars for you."
+  },
+  {
+   "shot": "S12",
+   "a": 1408,
+   "b": 1524,
+   "t0": 0,
+   "t1": 116,
+   "line": "Staring at the glowing numbers is the exact thing that causes you to mess up."
+  },
+  {
+   "shot": "S13",
+   "a": 1524,
+   "b": 1630,
+   "t0": 0,
+   "t1": 106,
+   "line": "The more you worry about failing, the more likely you are to make it happen."
+  },
+  {
+   "shot": "S14",
+   "a": 1630,
+   "b": 1678,
+   "t0": 0,
+   "t1": 48,
+   "line": "Pip realized his own fear"
+  },
+  {
+   "shot": "S15",
+   "a": 1678,
+   "b": 1735,
+   "t0": 0,
+   "t1": 57,
+   "line": "was creating the very disaster he was trying"
+  },
+  {
+   "shot": "S16",
+   "a": 1735,
+   "b": 1779,
+   "t0": 0,
+   "t1": 44,
+   "line": "to dodge."
+  }
+ ],
+ "shots": [
+  {
+   "id": "S1",
+   "size": "medium",
+   "key": 15,
+   "len": 91,
+   "first": 0,
+   "line": "Pip desperately wanted to stop his timer, so he visited a brain",
+   "note": "Pip visits research laboratory, scientist greets him"
+  },
+  {
+   "id": "S2",
+   "size": "medium",
+   "key": 15,
+   "len": 157,
+   "first": 91,
+   "line": "scientist for help. The scientist told him that the timers were tied to how human brains handle fear.",
+   "note": "Scientist explains brain fear response"
+  },
+  {
+   "id": "S3",
+   "size": "schematic",
+   "key": 15,
+   "len": 161,
+   "first": 248,
+   "line": "Way back in nineteen eighty-seven, a researcher named Daniel Wegner found a strange brain habit. He called",
+   "note": "Harvard 1987 psychology experiment record"
+  },
+  {
+   "id": "S4",
+   "size": "science diagram",
+   "key": 20,
+   "len": 161,
+   "first": 409,
+   "line": "it ironic process theory, and it happens whenever you try not to fail. When you force yourself not to think about",
+   "note": "White Bear Ironic Process Theory blueprint diagram"
+  },
+  {
+   "id": "S5",
+   "size": "thought bubble",
+   "key": 15,
+   "len": 67,
+   "first": 570,
+   "line": "a white bear, you think about it constantly.",
+   "note": "Pip's mind struggling not to think of white bear"
+  },
+  {
+   "id": "S6",
+   "size": "science diagram",
+   "key": 20,
+   "len": 149,
+   "first": 637,
+   "line": "Fighter pilots call this target fixation, and it causes them to crash during fast flight. If",
+   "note": "Fighter Pilot Target Fixation HUD diagram"
+  },
+  {
+   "id": "S7",
+   "size": "cockpit insert",
+   "key": 15,
+   "len": 115,
+   "first": 786,
+   "line": "a pilot stares straight at a tall tree, his hands steer right into it.",
+   "note": "Pilot staring at obstacle, hands steer in"
+  },
+  {
+   "id": "S8",
+   "size": "schematic",
+   "key": 15,
+   "len": 188,
+   "first": 901,
+   "line": "The floating timers were not reading magic, but measuring the stress inside your own head. As the clock ticks toward zero, your",
+   "note": "Prefrontal cortex neural stress meter"
+  },
+  {
+   "id": "S9",
+   "size": "schematic",
+   "key": 15,
+   "len": 99,
+   "first": 1089,
+   "line": "body floods with four times more stress hormone. That wave",
+   "note": "Cortisol hormone graph surging +400%"
+  },
+  {
+   "id": "S10",
+   "size": "macro insert",
+   "key": 15,
+   "len": 149,
+   "first": 1188,
+   "line": "of chemical panic shuts down your memory and makes your hands shake uncontrollably. So the timer does not",
+   "note": "Pip's hand shaking uncontrollably on desk"
+  },
+  {
+   "id": "S11",
+   "size": "wide",
+   "key": 15,
+   "len": 71,
+   "first": 1337,
+   "line": "predict an accident waiting in the stars for you.",
+   "note": "Scientist: timer is not magic fate"
+  },
+  {
+   "id": "S12",
+   "size": "close-up",
+   "key": 15,
+   "len": 116,
+   "first": 1408,
+   "line": "Staring at the glowing numbers is the exact thing that causes you to mess up.",
+   "note": "Pip staring at glowing numbers causing the blunder"
+  },
+  {
+   "id": "S13",
+   "size": "diagram",
+   "key": 15,
+   "len": 106,
+   "first": 1524,
+   "line": "The more you worry about failing, the more likely you are to make it happen.",
+   "note": "Psychological feedback loop diagram"
+  },
+  {
+   "id": "S14",
+   "size": "close-up",
+   "key": 15,
+   "len": 48,
+   "first": 1630,
+   "line": "Pip realized his own fear",
+   "note": "Pip's eyes widen with epiphany"
+  },
+  {
+   "id": "S15",
+   "size": "low angle",
+   "key": 15,
+   "len": 57,
+   "first": 1678,
+   "line": "was creating the very disaster he was trying",
+   "note": "Pip outside looking at dusk sky, realization"
+  },
+  {
+   "id": "S16",
+   "size": "hero medium",
+   "key": 15,
+   "len": 44,
+   "first": 1735,
+   "line": "to dodge.",
+   "note": "Pip resolves to break the mental cycle"
+  }
+ ],
+ "fx": [
+  {
+   "kind": "flash",
+   "f": 411
+  },
+  {
+   "kind": "flash",
+   "f": 639
+  },
+  {
+   "kind": "shake",
+   "f": 1190
+  },
+  {
+   "kind": "flash",
+   "f": 3
+  }
+ ],
+ "audio": {
+  "voice": "ch3/voice.wav",
+  "sfx": "ch3/sfx.wav",
+  "voiceVol": 0.8,
+  "sfxVol": 0.7296,
+  "music": "ch3/music.wav",
+  "musicVol": 0.1456
+ }
+}

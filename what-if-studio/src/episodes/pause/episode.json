@@ -1,0 +1,509 @@
+{
+ "id": "Pause",
+ "slug": "pause",
+ "topic": "What if you could pause everyone but you?",
+ "title": [
+  "WHAT IF YOU COULD",
+  "PAUSE EVERYONE BUT YOU?"
+ ],
+ "accent": "EVERYONE",
+ "power": {
+  "word": "Pause.",
+  "rule": "everyone and everything freezes around you while you move freely",
+  "look": "cyan freeze flash, cool contrast tint, and a PAUSE HUD chip"
+ },
+ "voice": {
+  "provider": "edge-tts",
+  "voice": "en-US-ChristopherNeural",
+  "rate": "+15%"
+ },
+ "script": [
+  {
+   "beat": "1 cold open, demo 1 (small and selfish)",
+   "text": "Mo grabs the cookie. Pause. Yours now."
+  },
+  {
+   "beat": "1 cold open, demo 2 (useful)",
+   "text": "Pop quiz in class. Pause. A plus."
+  },
+  {
+   "beat": "1 cold open, demo 3 (a little uncanny)",
+   "text": "Pause your best friend. He doesn't breathe. Creepy."
+  },
+  {
+   "beat": "2 the premise (title card)",
+   "text": "What if you could pause everyone but you?"
+  },
+  {
+   "beat": "3 the fun part",
+   "text": "Sounds amazing."
+  },
+  {
+   "beat": "4 the turn: the cost, one real fact",
+   "text": "One catch: the power grid balances frequency sixty times a second. Without operators, relays trip the whole planet in thirty seconds. Blackout. That's real."
+  },
+  {
+   "beat": "5-7 folded into a cliffhanger",
+   "text": "And you don't know how to restart it."
+  }
+ ],
+ "science": [
+  {
+   "claim": "The power grid balances frequency sixty times a second. Without operators, relays trip the whole planet in thirty seconds.",
+   "working": "Synchronous AC power grids operate at 60 Hz (60 cycles per second, or 50 Hz in Europe), where supply and load must match continuously to avoid generator turbine damage. Automated Underfrequency Load Shedding (UFLS) relays trip when frequency drops below threshold (e.g. 59.5 Hz), and uncorrected imbalance causes cascading blackout across the entire grid within 10 to 30 seconds.",
+   "source": "NERC Standard PRC-006 (Automatic Underfrequency Load Shedding); IEEE Power & Energy Magazine, Grid Stability and Frequency Control."
+  }
+ ],
+ "gaps": {
+  "pairs": {
+   "cookie|Pause": 0.22,
+   "now|Pop": 0.25,
+   "class|Pause": 0.22,
+   "plus|Pause": 0.25,
+   "friend|He": 0.22,
+   "Creepy|What": 0.35,
+   "you|Sounds": 0.30,
+   "amazing|One": 0.40,
+   "second|Without": 0.22,
+   "seconds|Blackout": 0.30,
+   "real|And": 0.35
+  }
+ },
+ "cast": [
+  "pipHood",
+  "mo"
+ ],
+ "shots": [
+  {
+   "id": "S1",
+   "size": "medium",
+   "set": "kitchen",
+   "key": 10,
+   "note": "Mo reaches for the cookie on the kitchen island"
+  },
+  {
+   "id": "S2",
+   "size": "macro insert, high angle",
+   "set": "kitchen (island top)",
+   "key": 8,
+   "note": "Mo's hand freezes mid-air right above the cookie; PAUSE look"
+  },
+  {
+   "id": "S3",
+   "size": "close-up",
+   "set": "kitchen",
+   "key": 12,
+   "note": "Pip slides the cookie away with a smug grin"
+  },
+  {
+   "id": "S4",
+   "size": "wide",
+   "set": "classroom",
+   "key": 14,
+   "note": "Teacher by the blackboard, pop quiz announced"
+  },
+  {
+   "id": "S5",
+   "size": "over the shoulder",
+   "set": "classroom",
+   "key": 12,
+   "note": "PAUSE: the whole classroom freezes solid mid-motion"
+  },
+  {
+   "id": "S6",
+   "size": "insert, top-down",
+   "set": "classroom (desk)",
+   "key": 10,
+   "note": "A plus test paper with red mark and gold star"
+  },
+  {
+   "id": "S7",
+   "size": "medium",
+   "set": "stairwell",
+   "key": 14,
+   "note": "Mo talking mid-step on stairs, arm gesturing"
+  },
+  {
+   "id": "S8",
+   "size": "extreme close-up",
+   "set": "stairwell",
+   "key": 10,
+   "note": "Mo's face completely frozen, eyes unblinking, eerie"
+  },
+  {
+   "id": "S9",
+   "size": "low angle, medium",
+   "set": "stairwell",
+   "key": 12,
+   "note": "Pip steps back, worried look at the uncanny stillness"
+  },
+  {
+   "id": "S10",
+   "size": "title, wide",
+   "set": "rooftop",
+   "key": 30,
+   "note": "Title card over the wide dusk city rooftop"
+  },
+  {
+   "id": "S11",
+   "size": "medium",
+   "set": "rooftop",
+   "key": 14,
+   "note": "Pip smiles against the frozen skyline: sounds amazing"
+  },
+  {
+   "id": "S12",
+   "size": "schematic",
+   "set": "schematic",
+   "key": 18,
+   "note": "Dark blueprint grid: power plant icons on the grid"
+  },
+  {
+   "id": "S13",
+   "size": "schematic, insert",
+   "set": "schematic",
+   "key": 15,
+   "note": "Sine wave and frequency counter: 60.00 Hz"
+  },
+  {
+   "id": "S14",
+   "size": "schematic, macro",
+   "set": "schematic",
+   "key": 16,
+   "note": "Frequency plunges to 59.2 Hz, warning TRIP RELAYS"
+  },
+  {
+   "id": "S15",
+   "size": "wide",
+   "set": "rooftop",
+   "key": 24,
+   "note": "Cascading blackout sweeps across the city skyline"
+  },
+  {
+   "id": "S16",
+   "size": "close-up, low angle",
+   "set": "rooftop",
+   "key": 20,
+   "note": "Pip frozen in shock in the pitch darkness, slow push in"
+  }
+ ],
+ "edit": [
+  {
+   "shot": "S1",
+   "at": "f:0"
+  },
+  {
+   "shot": "S2",
+   "at": "Pause",
+   "look": "pause"
+  },
+  {
+   "shot": "S3",
+   "at": "Yours"
+  },
+  {
+   "shot": "S4",
+   "at": "Pop"
+  },
+  {
+   "shot": "S5",
+   "at": "Pause",
+   "look": "pause"
+  },
+  {
+   "shot": "S6",
+   "at": "plus"
+  },
+  {
+   "shot": "S7",
+   "at": "friend"
+  },
+  {
+   "shot": "S8",
+   "at": "breathe",
+   "look": "pause"
+  },
+  {
+   "shot": "S9",
+   "at": "Creepy"
+  },
+  {
+   "shot": "S10",
+   "at": "What"
+  },
+  {
+   "shot": "S11",
+   "at": "Sounds"
+  },
+  {
+   "shot": "S12",
+   "at": "One"
+  },
+  {
+   "shot": "S13",
+   "at": "frequency"
+  },
+  {
+   "shot": "S14",
+   "at": "Without"
+  },
+  {
+   "shot": "S15",
+   "at": "Blackout"
+  },
+  {
+   "shot": "S16",
+   "at": "And"
+  }
+ ],
+ "fx": [
+  {
+   "at": "Pause",
+   "kind": "flash",
+   "color": "#7FD4FF"
+  },
+  {
+   "at": "Pause#2",
+   "kind": "flash",
+   "color": "#7FD4FF"
+  },
+  {
+   "at": "What",
+   "kind": "flash",
+   "color": "#FFF3DC"
+  },
+  {
+   "at": "Blackout",
+   "kind": "flash",
+   "color": "#FF3344"
+  },
+  {
+   "at": "Blackout",
+   "kind": "shake",
+   "len": 10,
+   "amp": 12
+  }
+ ],
+ "sound": {
+  "clips": {
+   "clink": [
+    "a ceramic coffee mug knocked by a hand on a wooden desk, short clink and scrape",
+    0.7
+   ],
+   "copy_click": [
+    "a crisp satisfying computer copy click with a tiny soft digital chime, short",
+    0.5
+   ],
+   "catch": [
+    "a hand catching a ceramic mug mid-air, soft slap and thud",
+    0.5
+   ],
+   "cookie_crunch": [
+    "one crunchy bite into a chocolate chip cookie, close up",
+    0.6
+   ],
+   "class_murmur": [
+    "a quiet classroom murmur, kids whispering, chairs shuffling",
+    2.0
+   ],
+   "ding": [
+    "a correct answer ding, bright bell chime",
+    0.8
+   ],
+   "step": [
+    "a single sneaker footstep on a wooden stair, close",
+    0.5
+   ],
+   "gulp": [
+    "a nervous cartoon gulp, short",
+    0.5
+   ],
+   "gasp": [
+    "two young people gasping in surprise at the same moment, cartoon, short",
+    0.8
+   ],
+   "title_boom": [
+    "a cinematic whoosh rising into a deep boom impact",
+    1.6
+   ],
+   "sparkle": [
+    "a short bright magical sparkle twinkle, cartoon",
+    0.8
+   ],
+   "counter_tick": [
+    "a fast mechanical counter ticking up rapidly, digits rolling over, getting faster",
+    1.6
+   ],
+   "power_hum": [
+    "a deep electrical power grid hum swelling louder, transformers buzzing, rising",
+    3.0
+   ],
+   "switch_off": [
+    "a heavy electrical breaker switching off with a dull clunk",
+    0.5
+   ],
+   "power_down": [
+    "a whole city losing power, a deep electrical power-down whine dropping in pitch into silence",
+    2.5
+   ],
+   "drone_hit": [
+    "a dark ominous low drone hit, deep cinematic horror sting",
+    2.6
+   ],
+   "bulb_pop": [
+    "a small light bulb popping out, a tiny glass tink and fizz",
+    0.5
+   ],
+   "room_tone": [
+    "quiet indoor room tone in the evening, faint distant city hum, no voices",
+    12.5
+   ],
+   "roof_wind": [
+    "a gentle evening breeze on a city rooftop, distant traffic",
+    7.0
+   ],
+   "music": [
+    "playful quirky cartoon background music, pizzicato strings, glockenspiel and soft bass, light and curious, 110 bpm, no vocals",
+    17.0
+   ]
+  },
+  "events": [
+   [
+    "f:0",
+    "room_tone",
+    0.12,
+    "onset",
+    "What"
+   ],
+   [
+    "cookie",
+    "clink",
+    0.25
+   ],
+   [
+    "Pause",
+    "copy_click",
+    0.45
+   ],
+   [
+    "Yours",
+    "catch",
+    0.35
+   ],
+   [
+    "now+3",
+    "cookie_crunch",
+    0.40
+   ],
+   [
+    "Pop",
+    "class_murmur",
+    0.12,
+    "onset",
+    "Pause#2"
+   ],
+   [
+    "Pause#2",
+    "copy_click",
+    0.45
+   ],
+   [
+    "plus",
+    "ding",
+    0.40
+   ],
+   [
+    "friend",
+    "step",
+    0.30
+   ],
+   [
+    "breathe",
+    "copy_click",
+    0.45
+   ],
+   [
+    "breathe+3",
+    "gulp",
+    0.35
+   ],
+   [
+    "Creepy",
+    "gasp",
+    0.30
+   ],
+   [
+    "What",
+    "title_boom",
+    0.65,
+    "peak"
+   ],
+   [
+    "What",
+    "roof_wind",
+    0.15,
+    "onset"
+   ],
+   [
+    "Sounds",
+    "sparkle",
+    0.30
+   ],
+   [
+    "One",
+    "counter_tick",
+    0.25,
+    "onset",
+    "Without"
+   ],
+   [
+    "second",
+    "power_hum",
+    0.20,
+    "onset",
+    "Blackout"
+   ],
+   [
+    "Without+6",
+    "switch_off",
+    0.35
+   ],
+   [
+    "Blackout",
+    "power_down",
+    0.60,
+    "onset"
+   ],
+   [
+    "Blackout",
+    "drone_hit",
+    0.70,
+    "onset"
+   ]
+  ],
+  "repeats": [
+   {
+    "at": "Blackout+4",
+    "clip": "bulb_pop",
+    "n": 12,
+    "every": 2,
+    "gain": [
+     0.12,
+     0.20
+    ],
+    "pitch": [
+     0.85,
+     1.15
+    ]
+   }
+  ],
+  "music": {
+   "clip": "music",
+   "until": "One"
+  },
+  "levels": {
+   "sfx_lu": -2.0,
+   "music_lu": -11.0
+  }
+ }
+}

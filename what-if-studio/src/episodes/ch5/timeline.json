@@ -1,0 +1,268 @@
+{
+ "slug": "ch5",
+ "title": "CHAPTER 5: CLIMAX & RESOLUTION BREAKING THE TARGET FIXATION TRAP",
+ "fps": 30,
+ "total": 1804,
+ "segments": [
+  {
+   "shot": "S1",
+   "a": 0,
+   "b": 129,
+   "t0": 0,
+   "t1": 129,
+   "line": "With only twelve minutes left on his clock, Pip sat on his living room floor. His"
+  },
+  {
+   "shot": "S2",
+   "a": 129,
+   "b": 252,
+   "t0": 0,
+   "t1": 123,
+   "line": "heart pounded against his ribs like a frightened bird trying to break free. If he ran"
+  },
+  {
+   "shot": "S3",
+   "a": 252,
+   "b": 389,
+   "t0": 0,
+   "t1": 137,
+   "line": "outside, target fixation might cause him to step into oncoming traffic. If he stayed"
+  },
+  {
+   "shot": "S4",
+   "a": 389,
+   "b": 509,
+   "t0": 0,
+   "t1": 120,
+   "line": "inside, his shaking hands might knock over a heater and start a fire. With"
+  },
+  {
+   "shot": "S5",
+   "a": 509,
+   "b": 658,
+   "t0": 0,
+   "t1": 149,
+   "line": "thirty seconds remaining, Pip remembered what the scientist said about target fixation and fear. You"
+  },
+  {
+   "shot": "S6",
+   "a": 658,
+   "b": 776,
+   "t0": 0,
+   "t1": 118,
+   "line": "cannot beat a bad thought by running away; you must pick your own target. He"
+  },
+  {
+   "shot": "S7",
+   "a": 776,
+   "b": 916,
+   "t0": 0,
+   "t1": 140,
+   "line": "pulled out his phone, opened a chat, and typed out a silly, embarrassing secret. He"
+  },
+  {
+   "shot": "S8",
+   "a": 916,
+   "b": 1039,
+   "t0": 0,
+   "t1": 123,
+   "line": "confessed to his crush that he wore mismatched cartoon socks on their first date. He"
+  },
+  {
+   "shot": "S9",
+   "a": 1039,
+   "b": 1169,
+   "t0": 0,
+   "t1": 130,
+   "line": "tapped send just as his glowing forehead timer struck zero in a bright flash."
+  },
+  {
+   "shot": "S10",
+   "a": 1169,
+   "b": 1301,
+   "t0": 0,
+   "t1": 132,
+   "line": "The crimson numbers burst into harmless little sparks and vanished from his forehead forever."
+  },
+  {
+   "shot": "S11",
+   "a": 1301,
+   "b": 1423,
+   "t0": 0,
+   "t1": 122,
+   "line": "He made his biggest mistake on his own terms without ruining his life or job. His"
+  },
+  {
+   "shot": "S12",
+   "a": 1423,
+   "b": 1559,
+   "t0": 0,
+   "t1": 136,
+   "line": "crush texted back a laughing face, and the heavy weight was finally lifted away. If"
+  },
+  {
+   "shot": "S13",
+   "a": 1559,
+   "b": 1684,
+   "t0": 0,
+   "t1": 125,
+   "line": "a glowing countdown appeared above your head tomorrow morning, would you look in the mirror? Or would"
+  },
+  {
+   "shot": "S14",
+   "a": 1684,
+   "b": 1804,
+   "t0": 0,
+   "t1": 120,
+   "line": "you rather live in peaceful ignorance and let your mistakes happen naturally?"
+  }
+ ],
+ "shots": [
+  {
+   "id": "S1",
+   "size": "wide",
+   "key": 15,
+   "len": 129,
+   "first": 0,
+   "line": "With only twelve minutes left on his clock, Pip sat on his living room floor. His",
+   "note": "Pip cross-legged on living room rug, 12 minutes left"
+  },
+  {
+   "id": "S2",
+   "size": "close-up",
+   "key": 15,
+   "len": 123,
+   "first": 129,
+   "line": "heart pounded against his ribs like a frightened bird trying to break free. If he ran",
+   "note": "Pip's racing heartbeat, panic in his throat"
+  },
+  {
+   "id": "S3",
+   "size": "insert flash",
+   "key": 15,
+   "len": 137,
+   "first": 252,
+   "line": "outside, target fixation might cause him to step into oncoming traffic. If he stayed",
+   "note": "Imagined traffic intersection crash"
+  },
+  {
+   "id": "S4",
+   "size": "insert flash",
+   "key": 15,
+   "len": 120,
+   "first": 389,
+   "line": "inside, his shaking hands might knock over a heater and start a fire. With",
+   "note": "Imagined space heater sparking near curtain"
+  },
+  {
+   "id": "S5",
+   "size": "close-up",
+   "key": 15,
+   "len": 149,
+   "first": 509,
+   "line": "thirty seconds remaining, Pip remembered what the scientist said about target fixation and fear. You",
+   "note": "30 seconds left: clarity strikes Pip"
+  },
+  {
+   "id": "S6",
+   "size": "medium",
+   "key": 15,
+   "len": 118,
+   "first": 658,
+   "line": "cannot beat a bad thought by running away; you must pick your own target. He",
+   "note": "Pip breathes slow, reaches for phone"
+  },
+  {
+   "id": "S7",
+   "size": "insert",
+   "key": 15,
+   "len": 140,
+   "first": 776,
+   "line": "pulled out his phone, opened a chat, and typed out a silly, embarrassing secret. He",
+   "note": "Typing embarrassing secret on phone"
+  },
+  {
+   "id": "S8",
+   "size": "insert",
+   "key": 15,
+   "len": 123,
+   "first": 916,
+   "line": "confessed to his crush that he wore mismatched cartoon socks on their first date. He",
+   "note": "Message: cartoon socks confession preview"
+  },
+  {
+   "id": "S9",
+   "size": "macro send",
+   "key": 15,
+   "len": 130,
+   "first": 1039,
+   "line": "tapped send just as his glowing forehead timer struck zero in a bright flash.",
+   "note": "Finger taps send at 00:00:00 flash"
+  },
+  {
+   "id": "S10",
+   "size": "hero burst",
+   "key": 20,
+   "len": 132,
+   "first": 1169,
+   "line": "The crimson numbers burst into harmless little sparks and vanished from his forehead forever.",
+   "note": "Golden sparkles burst from forehead, red vanishes"
+  },
+  {
+   "id": "S11",
+   "size": "medium",
+   "key": 15,
+   "len": 122,
+   "first": 1301,
+   "line": "He made his biggest mistake on his own terms without ruining his life or job. His",
+   "note": "Pip smiles in warm relief, life intact"
+  },
+  {
+   "id": "S12",
+   "size": "insert",
+   "key": 15,
+   "len": 136,
+   "first": 1423,
+   "line": "crush texted back a laughing face, and the heavy weight was finally lifted away. If",
+   "note": "Crush reply with laughing emoji"
+  },
+  {
+   "id": "S13",
+   "size": "hero direct",
+   "key": 15,
+   "len": 125,
+   "first": 1559,
+   "line": "a glowing countdown appeared above your head tomorrow morning, would you look in the mirror? Or would",
+   "note": "Pip addresses camera: would you look?"
+  },
+  {
+   "id": "S14",
+   "size": "wide skyline",
+   "key": 20,
+   "len": 120,
+   "first": 1684,
+   "line": "you rather live in peaceful ignorance and let your mistakes happen naturally?",
+   "note": "Dusk city skyline, final comment question card"
+  }
+ ],
+ "fx": [
+  {
+   "kind": "flash",
+   "f": 1041
+  },
+  {
+   "kind": "flash",
+   "f": 1171
+  },
+  {
+   "kind": "shake",
+   "f": 1173
+  }
+ ],
+ "audio": {
+  "voice": "ch5/voice.wav",
+  "sfx": "ch5/sfx.wav",
+  "voiceVol": 0.7908,
+  "sfxVol": 0.8
+ }
+}
