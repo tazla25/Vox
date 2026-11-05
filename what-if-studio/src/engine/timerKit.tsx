@@ -1,38 +1,85 @@
 import React from 'react';
-import { FONT } from './index';
+import { FONT } from './fonts';
+import { Pose, overheadAnchor, OVERHEAD_BADGE_Y } from './rig';
 
 // ============================================================================
-// FLOATING TIMER CAPSULE COMPONENT
+// OVERHEAD BADGE / HEART / TIMER COMPONENT
+// STRICT ENFORCEMENT: Locked at least 65px above top of head/hood (y <= -321)
 // ============================================================================
-export interface FloatingTimerProps {
-  x: number;
-  y: number;
-  timeText: string;
-  kind?: 'safe' | 'warning' | 'danger';
+
+export interface OverheadBadgeProps {
+  x?: number;
+  y?: number;
+  pose?: Pose;
+  text?: string;
+  sub?: string;
+  kind?: 'safe' | 'warning' | 'danger' | 'info';
+  heart?: boolean;
   scale?: number;
   pulse?: boolean;
   t?: number;
+  tail?: boolean;
+  children?: React.ReactNode;
 }
 
-export const FloatingTimer: React.FC<FloatingTimerProps> = ({
-  x,
+export const OverheadBadge: React.FC<OverheadBadgeProps> = ({
+  x = 0,
   y,
-  timeText,
-  kind = 'danger',
+  pose,
+  text,
+  sub,
+  kind = 'info',
+  heart = false,
   scale = 1,
   pulse = true,
   t = 0,
+  tail = true,
+  children,
 }) => {
-  const color = kind === 'safe' ? '#34D399' : kind === 'warning' ? '#FBBF24' : '#FF334B';
-  const glowColor = kind === 'safe' ? '#10B981' : kind === 'warning' ? '#F59E0B' : '#EF4444';
-  const pulseAlpha = pulse ? 0.75 + 0.25 * Math.sin((t * Math.PI) / 8) : 1;
-  const w = Math.max(140, timeText.length * 11 + 44);
-  const h = 34;
+  // Determine placement coordinates
+  let renderX = x;
+  let renderY = y ?? OVERHEAD_BADGE_Y;
+
+  if (pose) {
+    const anchor = overheadAnchor(pose, 65);
+    renderX = anchor.x;
+    renderY = anchor.y;
+  } else {
+    // ENFORCEMENT: If in local character coordinate space (y <= 0 relative to hips),
+    // strictly enforce y <= OVERHEAD_BADGE_Y (-321px). Never allow overlapping forehead or eyes!
+    if (renderY > OVERHEAD_BADGE_Y && renderY <= 0) {
+      renderY = OVERHEAD_BADGE_Y;
+    }
+  }
+
+  const color =
+    kind === 'safe'
+      ? '#34D399'
+      : kind === 'warning'
+      ? '#FBBF24'
+      : kind === 'danger'
+      ? '#FF334B'
+      : '#38BDF8';
+  const glowColor =
+    kind === 'safe'
+      ? '#10B981'
+      : kind === 'warning'
+      ? '#F59E0B'
+      : kind === 'danger'
+      ? '#EF4444'
+      : '#0284C7';
+
+  const pulseAlpha = pulse ? 0.85 + 0.15 * Math.sin((t * Math.PI) / 10) : 1;
+  const heartScale = pulse ? 1 + 0.12 * Math.sin(t * 0.4) : 1;
+
+  const displayStr = text ?? (heart ? 'SYNC 100%' : 'STATUS');
+  const w = Math.max(heart ? 160 : 140, displayStr.length * 12 + (heart ? 64 : 44));
+  const h = sub ? 46 : 36;
 
   return (
-    <g transform={`translate(${x} ${y}) scale(${scale})`}>
+    <g transform={`translate(${renderX} ${renderY}) scale(${scale})`}>
       {/* Outer ambient glow */}
-      <ellipse cx={0} cy={0} rx={w * 0.7} ry={24} fill={glowColor} opacity={0.3 * pulseAlpha} filter="blur(8px)" />
+      <ellipse cx={0} cy={0} rx={w * 0.7} ry={h * 0.75} fill={glowColor} opacity={0.32 * pulseAlpha} filter="blur(8px)" />
 
       {/* Pill background container */}
       <rect
@@ -42,31 +89,317 @@ export const FloatingTimer: React.FC<FloatingTimerProps> = ({
         height={h}
         rx={h / 2}
         ry={h / 2}
-        fill="#0A0E17"
-        fillOpacity={0.92}
+        fill="#090D17"
+        fillOpacity={0.95}
         stroke={color}
-        strokeWidth={2}
+        strokeWidth={2.5}
         opacity={pulseAlpha}
       />
 
-      {/* Blinking status dot */}
-      <circle cx={-w / 2 + 16} cy={0} r={4.5} fill={color} opacity={pulseAlpha} />
-      <circle cx={-w / 2 + 16} cy={0} r={7.5} fill="none" stroke={color} strokeWidth={1} opacity={0.5 * pulseAlpha} />
+      {/* Optional downward indicator tail pointing toward head apex */}
+      {tail && (
+        <polygon
+          points={`-6,${h / 2 - 1} 6,${h / 2 - 1} 0,${h / 2 + 9}`}
+          fill="#090D17"
+          stroke={color}
+          strokeWidth={2}
+          opacity={pulseAlpha}
+        />
+      )}
 
-      {/* Digital monospace countdown text */}
+      {/* Icon: Heart or Status Indicator */}
+      {heart ? (
+        <g transform={`translate(${-w / 2 + 24} 0) scale(${heartScale})`}>
+          <path
+            d="M 0 3 C -8 -7 -15 2 -6 10 L 0 16 L 6 10 C 15 2 8 -7 0 3 Z"
+            fill="#FF3366"
+            stroke="#FFE4E6"
+            strokeWidth={1.5}
+            transform="translate(0, -9)"
+          />
+        </g>
+      ) : (
+        <g transform={`translate(${-w / 2 + 18} 0)`}>
+          <circle cx={0} cy={0} r={5} fill={color} opacity={pulseAlpha} />
+          <circle cx={0} cy={0} r={8.5} fill="none" stroke={color} strokeWidth={1.2} opacity={0.5 * pulseAlpha} />
+        </g>
+      )}
+
+      {/* Text label: Cream/white for razor-sharp readability on dark pill */}
       <text
-        x={8}
-        y={5}
-        fill={color}
-        fontSize={14}
+        x={heart ? 15 : 9}
+        y={sub ? -3 : 5.5}
+        fill="#F8FAFC"
+        fontSize={15}
         fontWeight="800"
         fontFamily={FONT.ui}
         letterSpacing="1.5px"
         textAnchor="middle"
         opacity={pulseAlpha}
       >
-        {timeText}
+        {displayStr}
       </text>
+
+      {/* Optional secondary sub-text */}
+      {sub && (
+        <text
+          x={heart ? 15 : 9}
+          y={15}
+          fill="#94A3B8"
+          fontSize={10.5}
+          fontWeight="700"
+          fontFamily={FONT.ui}
+          letterSpacing="1px"
+          textAnchor="middle"
+          opacity={pulseAlpha}
+        >
+          {sub}
+        </text>
+      )}
+
+      {children}
+    </g>
+  );
+};
+
+// ============================================================================
+// FLOATING TIMER CAPSULE COMPONENT (WITH LOCKED OVERHEAD POSITIONING)
+// ============================================================================
+export interface FloatingTimerProps {
+  x?: number;
+  y?: number;
+  pose?: Pose;
+  timeText: string;
+  kind?: 'safe' | 'warning' | 'danger' | 'info';
+  scale?: number;
+  pulse?: boolean;
+  t?: number;
+  heart?: boolean;
+}
+
+export const FloatingTimer: React.FC<FloatingTimerProps> = ({
+  x = 0,
+  y = OVERHEAD_BADGE_Y,
+  pose,
+  timeText,
+  kind = 'danger',
+  scale = 1,
+  pulse = true,
+  t = 0,
+  heart = false,
+}) => {
+  return (
+    <OverheadBadge
+      x={x}
+      y={y}
+      pose={pose}
+      text={timeText}
+      kind={kind}
+      heart={heart}
+      scale={scale}
+      pulse={pulse}
+      t={t}
+    />
+  );
+};
+
+// ============================================================================
+// CRUSH METER COMPONENT (0% TO 100% PINK HEART METER)
+// STRICT ENFORCEMENT: Locked at least 70px above top of head/hood (y <= -326px)
+// ============================================================================
+export interface CrushMeterProps {
+  percent: number; // 0 to 100
+  label?: string; // e.g. "PURE BRO ZONE", "MUTUAL ATTRACTION", "SECRET CRUSH"
+  x?: number;
+  y?: number;
+  pose?: Pose;
+  scale?: number;
+  pulse?: boolean;
+  t?: number;
+  tail?: boolean;
+}
+
+export const CrushMeter: React.FC<CrushMeterProps> = ({
+  percent,
+  label,
+  x = 0,
+  y = OVERHEAD_BADGE_Y,
+  pose,
+  scale = 1,
+  pulse = true,
+  t = 0,
+  tail = true,
+}) => {
+  let renderX = x;
+  let renderY = y ?? OVERHEAD_BADGE_Y;
+
+  if (pose) {
+    const anchor = overheadAnchor(pose, 70);
+    renderX = anchor.x;
+    renderY = anchor.y;
+  } else {
+    // Strict safety clamp: must be <= OVERHEAD_BADGE_Y (-326px) when in local coords
+    if (renderY > OVERHEAD_BADGE_Y && renderY <= 0) {
+      renderY = OVERHEAD_BADGE_Y;
+    }
+  }
+
+  // Color dynamics based on crush score
+  const isZero = percent === 0;
+  const isHot = percent >= 90;
+  const isHigh = percent >= 50;
+
+  const strokeColor = isZero ? '#64748B' : isHot ? '#FF1493' : isHigh ? '#EC4899' : '#F472B6';
+  const glowColor = isZero ? '#334155' : isHot ? '#FF007F' : isHigh ? '#DB2777' : '#FB7185';
+  const heartFill = isZero ? '#94A3B8' : isHot ? '#FF1493' : '#EC4899';
+
+  // Heartbeat pulse frequency speeds up as score rises
+  const beatSpeed = 0.3 + (percent / 100) * 0.4;
+  const heartScale = pulse && !isZero ? 1 + 0.16 * Math.sin(t * beatSpeed) : 1;
+  const alpha = pulse ? 0.9 + 0.1 * Math.sin(t * 0.25) : 1;
+
+  const scoreText = `${percent}%`;
+  const defaultLabel = isZero
+    ? 'BRO ZONE'
+    : percent === 100
+    ? 'SOULMATE'
+    : percent >= 95
+    ? 'MYSTERY THREAD'
+    : percent >= 80
+    ? 'DEEP CRUSH'
+    : percent >= 40
+    ? 'INTEREST'
+    : 'CURIOUS';
+  const subText = label ?? (isHot || isZero ? defaultLabel : undefined);
+
+  const w = subText ? Math.max(145, subText.length * 10 + 60) : 135;
+  const h = subText ? 46 : 36;
+
+  return (
+    <g transform={`translate(${renderX} ${renderY}) scale(${scale})`}>
+      {/* Outer ambient glow */}
+      <ellipse
+        cx={0}
+        cy={0}
+        rx={w * 0.72}
+        ry={h * 0.75}
+        fill={glowColor}
+        opacity={(isHot ? 0.45 : 0.28) * alpha}
+        filter="blur(8px)"
+      />
+
+      {/* Pill background container */}
+      <rect
+        x={-w / 2}
+        y={-h / 2}
+        width={w}
+        height={h}
+        rx={h / 2}
+        ry={h / 2}
+        fill="#0A0914"
+        fillOpacity={0.96}
+        stroke={strokeColor}
+        strokeWidth={isHot ? 3 : 2.5}
+        opacity={alpha}
+      />
+
+      {/* Optional downward indicator tail pointing toward head apex */}
+      {tail && (
+        <polygon
+          points={`-6,${h / 2 - 1} 6,${h / 2 - 1} 0,${h / 2 + 9}`}
+          fill="#0A0914"
+          stroke={strokeColor}
+          strokeWidth={2}
+          opacity={alpha}
+        />
+      )}
+
+      {/* Beating Heart Icon */}
+      <g transform={`translate(${-w / 2 + 24} 0) scale(${heartScale})`}>
+        <path
+          d="M 0 3 C -8 -7 -15 2 -6 10 L 0 16 L 6 10 C 15 2 8 -7 0 3 Z"
+          fill={heartFill}
+          stroke={isZero ? '#CBD5E1' : '#FFE4E6'}
+          strokeWidth={1.5}
+          transform="translate(0, -9)"
+        />
+      </g>
+
+      {/* Percentage Score */}
+      <text
+        x={15}
+        y={subText ? -3 : 5.5}
+        fill="#FFFFFF"
+        fontSize={16}
+        fontWeight="900"
+        fontFamily={FONT.ui}
+        letterSpacing="1.5px"
+        textAnchor="middle"
+        opacity={alpha}
+      >
+        {scoreText}
+      </text>
+
+      {/* Optional Sub-Label */}
+      {subText && (
+        <text
+          x={15}
+          y={15}
+          fill={isHot ? '#FFA6C9' : '#FDA4AF'}
+          fontSize={10.5}
+          fontWeight="800"
+          fontFamily={FONT.ui}
+          letterSpacing="1.2px"
+          textAnchor="middle"
+          opacity={alpha}
+        >
+          {subText}
+        </text>
+      )}
+    </g>
+  );
+};
+
+// ============================================================================
+// GLOWING PINK THREAD COMPONENT (FOR CHAPTERS 4 & 5 MYSTERY THREAD)
+// ============================================================================
+export interface PinkThreadProps {
+  x1: number;
+  y1: number;
+  x2: number;
+  y2: number;
+  t?: number;
+  opacity?: number;
+  strokeWidth?: number;
+}
+
+export const PinkThread: React.FC<PinkThreadProps> = ({
+  x1,
+  y1,
+  x2,
+  y2,
+  t = 0,
+  opacity = 0.9,
+  strokeWidth = 3.5,
+}) => {
+  // Midpoint with animated catenary sag & gentle wave
+  const mx = (x1 + x2) / 2;
+  const my = (y1 + y2) / 2 + 35 + Math.sin(t * 0.15) * 12;
+  const pathD = `M ${x1} ${y1} Q ${mx} ${my} ${x2} ${y2}`;
+
+  return (
+    <g style={{ mixBlendMode: 'screen' }} opacity={opacity}>
+      {/* Outer blurred halo */}
+      <path d={pathD} stroke="#FF007F" strokeWidth={strokeWidth * 4} fill="none" opacity={0.35} filter="blur(6px)" />
+      {/* Neon pink body */}
+      <path d={pathD} stroke="#FF1493" strokeWidth={strokeWidth * 2} fill="none" opacity={0.7} />
+      {/* White/golden core filament */}
+      <path d={pathD} stroke="#FFF0F5" strokeWidth={strokeWidth} fill="none" strokeDasharray="14 4" />
+      {/* End point heart nodes */}
+      <circle cx={x1} cy={y1} r={6} fill="#FF1493" />
+      <circle cx={x1} cy={y1} r={3} fill="#FFFFFF" />
+      <circle cx={x2} cy={y2} r={6} fill="#FF1493" />
+      <circle cx={x2} cy={y2} r={3} fill="#FFFFFF" />
     </g>
   );
 };

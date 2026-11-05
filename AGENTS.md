@@ -201,3 +201,14 @@ Because a 5 to 10 minute video has 100+ shots and 9,000–18,000 frames, NEVER t
   2. Build, animate (using `./what-if-studio`'s Remotion components, perspective rooms, characters, camera moves, and diagrams), and render **one Chapter at a time** into `renders/chapter_1.mp4`, `renders/chapter_2.mp4`, etc.
   3. Keep shot pacing brisk (~15–22 distinct shots per 60–90s chapter) so visuals never sit still for more than 3–4 seconds.
   4. Once all chapters are rendered, concatenate them seamlessly with `ffmpeg -f concat` into `renders/FULL_YOUTUBE_EPISODE.mp4`.
+
+## 3. Critical Visual Architecture Rules (Permanent Studio Standards)
+- **100% Dusk-Lit Stick-Figure Style:** Pip (`LOOKS.pipHood` in dark hoodie with yellow drawstrings), Mo (`LOOKS.mo` with curly hair and headphones), and the original cast rig.
+- **Lock Overhead Badges / Hearts / Timers (Clearance >= 65px):** Any floating timer, heart, stat badge, number, or dialogue box MUST be locked strictly at least 65px above the head/hood apex (`y <= HEAD_TOP_LOCAL_Y - 65 = -321px` in local coordinates, or via `overheadAnchor(pose, 65)` or `<Hero overhead={<OverheadBadge ... />} />`). It must NEVER overlap the character's eyes or face under any camera zoom.
+- **Official Studio Set Library (Always Use Dedicated Rooms):**
+  - `city_sidewalk`: Outdoor dusk sidewalk with crosswalk, streetlamp casting a warm light cone, coffee shop window, and sunset skyline (street scenes NEVER use the indoor staircase!).
+  - `school_hallway`: Perspective school corridor with green/slate lockers, classroom door, bulletin board, and ceiling light cones.
+  - `school_cafeteria`: Lunchroom with tables, food tray counter, and tall dusk windows.
+  - `modern_office`: Clean executive desk, computer monitor, bookshelf, and city window (office scenes NEVER reuse the school chalkboard!).
+  - `Classroom`: Supports dynamic `chalkText` prop instead of always hardcoding `7 x 8 = ?`.
+- **Ban Abstract Oval Shapes:** Never draw floating white/orange ovals to represent hands or sinks. Always use actual `Pip`, `Mo`, and cast characters in rooms, close-up face reactions, phone/chat UI cards, or clean technical diagrams.

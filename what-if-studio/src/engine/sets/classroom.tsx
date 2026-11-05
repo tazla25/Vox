@@ -59,8 +59,16 @@ const KidDesk: React.FC<{ u: number; w: number }> = ({ u, w }) => {
   );
 };
 
-/** `board` replaces the default sum (7 x 8 = ?) with your own chalk; the writing area is x 426-1054, y 196-524. */
-export const Classroom: React.FC<{ t: number; solved?: boolean; wrong?: boolean; laugh?: number; id?: string; board?: React.ReactNode }> = ({ t, solved = false, wrong = false, laugh = 0, id = 'cls', board }) => {
+/** `board` or `chalkText` replaces the default sum (7 x 8 = ?) with your own chalk; the writing area is x 426-1054, y 196-524. */
+export const Classroom: React.FC<{
+  t: number;
+  solved?: boolean;
+  wrong?: boolean;
+  laugh?: number;
+  id?: string;
+  board?: React.ReactNode;
+  chalkText?: string;
+}> = ({ t, solved = false, wrong = false, laugh = 0, id = 'cls', board, chalkText }) => {
   const r = CLS;
   const { P, Q } = r;
   const tiles: React.ReactNode[] = [];
@@ -136,7 +144,21 @@ export const Classroom: React.FC<{ t: number; solved?: boolean; wrong?: boolean;
         <text x={820} y={490}>12 ÷ 4 = 3</text>
         <path d="M 900 230 L 960 300 L 870 300 Z" fill="none" stroke="#EDEFE6" strokeWidth={3} />
       </g>
-      {board ?? (
+      {chalkText !== undefined ? (
+        <g>
+          <text
+            x={740}
+            y={385}
+            textAnchor="middle"
+            fontFamily={FONT.hand}
+            fontSize={chalkText.length > 16 ? 60 : chalkText.length > 10 ? 82 : 110}
+            fill={solved ? '#9BEFB0' : wrong ? '#FF6A5A' : '#EDEFE6'}
+            opacity={0.94}
+          >
+            {chalkText}
+          </text>
+        </g>
+      ) : board ?? (
         <g>
           <text x={690} y={410} textAnchor="middle" fontFamily={FONT.hand} fontSize={120} fill="#EDEFE6" opacity={0.92}>
             7 × 8 =

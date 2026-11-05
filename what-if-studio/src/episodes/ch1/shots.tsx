@@ -53,15 +53,15 @@ export const S2: React.FC<ShotProps> = ({ t, len }) => {
       {/* A row of pedestrians with floating timers */}
       <g transform="translate(420 700) scale(0.9)">
         <Hero look={MO} pose={{ x: 0, y: 0, scale: 0.9, facing: 1, tilt: 0, spin: 0, headTilt: 0, armL: { a: 10, b: -5 }, armR: { a: -15, b: -10 }, legL: { a: 5, b: -5 }, legR: { a: -5, b: -5 }, expr: 'happy', blink: 0, look: 0.3, glasses: 0, yaw: 0.4, squash: 0, handL: 'open', handR: 'open', sway: 0 }} shadow={0} />
-        <FloatingTimer x={0} y={-210} timeText="42Y : 08M" kind="safe" scale={0.9} t={t} />
+        <FloatingTimer x={0} y={-325} timeText="42Y : 08M" kind="safe" scale={0.9} t={t} />
       </g>
       <g transform="translate(940 710) scale(0.95)">
         <Hero look={SUIT} pose={{ x: 0, y: 0, scale: 0.95, facing: 1, tilt: 0, spin: 0, headTilt: 2, armL: { a: -10, b: -5 }, armR: { a: 15, b: -10 }, legL: { a: -5, b: -5 }, legR: { a: 10, b: -5 }, expr: 'neutral', blink: 0, look: -0.2, glasses: 0, yaw: -0.3, squash: 0, handL: 'open', handR: 'open', sway: 0 }} shadow={0} />
-        <FloatingTimer x={0} y={-225} timeText="04Y : 112D" kind="warning" scale={0.9} t={t} />
+        <FloatingTimer x={0} y={-325} timeText="04Y : 112D" kind="warning" scale={0.9} t={t} />
       </g>
       <g transform="translate(1460 700) scale(0.9)">
         <Hero look={SIS} pose={{ x: 0, y: 0, scale: 0.88, facing: 1, tilt: -2, spin: 0, headTilt: -3, armL: { a: 25, b: -15 }, armR: { a: -20, b: -10 }, legL: { a: 12, b: -8 }, legR: { a: -8, b: -5 }, expr: 'happy', blink: 0, look: -0.6, glasses: 0, yaw: -0.5, squash: 0, handL: 'open', handR: 'open', sway: 0 }} shadow={0} />
-        <FloatingTimer x={0} y={-205} timeText="29Y : 310D" kind="safe" scale={0.85} t={t} />
+        <FloatingTimer x={0} y={-325} timeText="29Y : 310D" kind="safe" scale={0.85} t={t} />
       </g>
     </g>
   );
@@ -148,7 +148,7 @@ export const S6: React.FC<ShotProps> = ({ t, len }) => {
       {/* Tripping walker tumbling */}
       <g transform={`translate(740 780) rotate(${kf(t, [[0, 15], [len, 65]])})`}>
         <Hero look={SUIT} pose={{ x: 0, y: 0, scale: 1.0, facing: 1, tilt: 25, spin: 0, headTilt: 15, armL: { a: 85, b: -20 }, armR: { a: -45, b: -30 }, legL: { a: 45, b: -25 }, legR: { a: -35, b: -10 }, expr: 'shock', blink: 0, look: 0.8, glasses: 0, yaw: 0.6, squash: 0, handL: 'open', handR: 'open', sway: 0 }} shadow={0} />
-        <FloatingTimer x={0} y={-220} timeText="00:00:00" kind="danger" scale={1.1} t={t} />
+        <FloatingTimer x={0} y={-325} timeText="00:00:00" kind="danger" scale={1.1} t={t} />
       </g>
       {/* 3 Flying coffee cups */}
       <g transform={`translate(1180 ${cupY}) rotate(${cupRot})`}>
@@ -304,21 +304,38 @@ export const S13: React.FC<ShotProps> = ({ t, len }) => {
 // ============================================================================
 export const S14: React.FC<ShotProps> = ({ t, len }) => {
   return (
-    <g transform={camT(960, 540, 1.05)}>
-      <rect width={1920} height={1080} fill="#1A1C24" />
-      {/* Ceramic Sink Basin */}
-      <ellipse cx={960} cy={540} rx={420} ry={310} fill="#ECE4D6" stroke="#C8BCAB" strokeWidth={14} />
-      <ellipse cx={960} cy={540} rx={360} ry={250} fill="#D4C8B8" />
-      {/* Drain */}
-      <circle cx={960} cy={540} r={40} fill="#4A4550" stroke="#2B2730" strokeWidth={6} />
-      {/* Running water stream */}
-      <ellipse cx={960} cy={540} rx={75} ry={55} fill="#6EE7B7" opacity={0.35} />
-      <path d={`M 960 280 L 960 540`} stroke="#6EE7B7" strokeWidth={18} strokeLinecap="round" opacity={0.65} />
-      {/* Pip's two hands gripping the edge */}
-      <ellipse cx={600} cy={540} rx={55} ry={42} fill="#F6EFE3" stroke="#1D2033" strokeWidth={5} />
-      <ellipse cx={1320} cy={540} rx={55} ry={42} fill="#F6EFE3" stroke="#1D2033" strokeWidth={5} />
-      {/* Red reflection floating on the water */}
-      <ellipse cx={960} cy={480} rx={160} ry={35} fill="#FF334B" opacity={0.4 + 0.15 * Math.sin(t * 0.4)} filter="blur(6px)" />
+    <g transform={camT(960, 540, 1.1)}>
+      <Bedroom t={t} id="ch1_s14" />
+      {/* Pip leaning over the counter in shock, no abstract floating ovals */}
+      <Hero
+        look={PIP}
+        pose={{
+          x: 960,
+          y: 720,
+          scale: 1.15,
+          facing: 1,
+          tilt: 8,
+          spin: 0,
+          headTilt: -4,
+          armL: { a: 55, b: 35 },
+          armR: { a: -35, b: 40 },
+          legL: { a: 8, b: 0 },
+          legR: { a: -8, b: 0 },
+          expr: 'shock',
+          blink: 0,
+          look: -0.6,
+          glasses: 0,
+          yaw: -0.4,
+          squash: 0,
+          handL: 'open',
+          handR: 'open',
+          sway: 0,
+        }}
+        shadow={0.6}
+      />
+      {/* Red countdown timer locked overhead */}
+      <FloatingTimer x={960} y={350} timeText="06D : 14H : 12M" kind="danger" scale={1.2} t={t} />
+      <Glow x={960} y={480} r={180} kind="red" o={0.4} />
     </g>
   );
 };

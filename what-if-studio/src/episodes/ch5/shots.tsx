@@ -21,7 +21,7 @@ export const S1: React.FC<ShotProps> = ({ t, len }) => {
       <ellipse cx={960} cy={760} rx={360} ry={140} fill="#B45309" stroke="#92400E" strokeWidth={6} opacity={0.6} />
       <g transform="translate(960 730)">
         <Hero look={PIP} pose={{ x: 0, y: 0, scale: 1.15, facing: 1, tilt: 6, spin: 0, headTilt: 4, armL: { a: 45, b: -30 }, armR: { a: 45, b: -30 }, legL: { a: 35, b: -40 }, legR: { a: -35, b: -40 }, expr: 'worried', blink: 0, look: 0, glasses: 0, yaw: 0, squash: 0, handL: 'open', handR: 'open', sway: 0 }} shadow={0} />
-        <FloatingTimer x={0} y={-230} timeText="00:11:58" kind="danger" scale={1.2} t={t} />
+        <FloatingTimer x={0} y={-325} timeText="00:11:58" kind="danger" scale={1.2} t={t} />
         <Glow x={0} y={-230} r={420} kind="red" o={0.45} />
       </g>
     </g>
@@ -107,7 +107,7 @@ export const S6: React.FC<ShotProps> = ({ t, len }) => {
       <Bedroom t={t + 140} id="ch5_s6" />
       <g transform="translate(960 720)">
         <Hero look={PIP} pose={{ x: 0, y: 0, scale: 1.15, facing: 1, tilt: 0, spin: 0, headTilt: -2, armL: { a: 45, b: -30 }, armR: { a: 45, b: -30 }, legL: { a: 0, b: 0 }, legR: { a: 0, b: 0 }, expr: 'neutral', blink: 0, look: 0, glasses: 0, yaw: 0, squash: 0, handL: 'open', handR: 'open', sway: 0 }} shadow={0} />
-        <FloatingTimer x={0} y={-230} timeText="00:00:18" kind="danger" scale={1.15} t={t} />
+        <FloatingTimer x={0} y={-325} timeText="00:00:18" kind="danger" scale={1.15} t={t} />
       </g>
     </g>
   );
@@ -192,8 +192,12 @@ export const S9: React.FC<ShotProps> = ({ t, len }) => {
         <text x={0} y={20} fill="#FFFFFF" fontSize={46} fontWeight="900" letterSpacing="4px" textAnchor="middle" fontFamily={FONT.title}>
           SEND MESSAGE
         </text>
-        {/* Pip's finger tapping button right at strike */}
-        <ellipse cx={0} cy={-20} rx={48} ry={70} fill="#F6EFE3" stroke="#1D2033" strokeWidth={6} />
+        {/* Pip's real pointing hand pressing button, no abstract ovals */}
+        <g transform="translate(0, -10)">
+          <rect x={-6} y={15} width={12} height={28} rx={6} fill="#F6EFE3" stroke="#1D2033" strokeWidth={4} />
+          <path d="M -16 -4 Q -20 16 -8 22 L 8 22 Q 20 16 16 -4 Z" fill="#F6EFE3" stroke="#1D2033" strokeWidth={4} strokeLinejoin="round" />
+          <ellipse cx={10} cy={6} rx={4.5} ry={7} fill="#F6EFE3" stroke="#1D2033" strokeWidth={3.5} />
+        </g>
       </g>
       <TimerHud timeText="00:00:00" label="STRIKING ZERO // INTENTIONAL RELEASE" t={t} color="#38BDF8" />
       <Glow x={960} y={540} r={650} kind="cool" o={0.5} />

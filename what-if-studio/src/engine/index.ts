@@ -16,4 +16,8 @@ export * from './sets/rooftop';
 export * from './sets/kitchen';
 export * from './sets/schematic';
 export * from './sets/bedroom';
+export * from './sets/city_sidewalk';
+export * from './sets/school_hallway';
+export * from './sets/school_cafeteria';
+export * from './sets/modern_office';
 export * from './timerKit';

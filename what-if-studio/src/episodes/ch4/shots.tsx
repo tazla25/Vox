@@ -82,7 +82,7 @@ export const S3: React.FC<ShotProps> = ({ t, len }) => {
       {/* Lone chair and CEO in center */}
       <g transform="translate(960 740)">
         <Hero look={CEO} pose={{ x: 0, y: 0, scale: 1.15, facing: 1, tilt: 4, spin: 0, headTilt: 4, armL: { a: 45, b: -30 }, armR: { a: 45, b: -30 }, legL: { a: 0, b: 0 }, legR: { a: 0, b: 0 }, expr: 'worried', blink: 0, look: 0, glasses: 0, yaw: 0, squash: 0, handL: 'open', handR: 'open', sway: 0 }} shadow={0} />
-        <FloatingTimer x={0} y={-230} timeText="00D : 06H : 12M" kind="danger" scale={1.1} t={t} />
+        <FloatingTimer x={0} y={-325} timeText="00D : 06H : 12M" kind="danger" scale={1.1} t={t} />
         <Glow x={0} y={-230} r={360} kind="red" o={0.35} />
       </g>
     </g>
@@ -161,7 +161,7 @@ export const S6: React.FC<ShotProps> = ({ t, len }) => {
       {/* Shopper turned away */}
       <g transform="translate(960 720)">
         <Hero look={PIP} pose={{ x: 0, y: 0, scale: 1.1, facing: 1, tilt: -6, spin: 0, headTilt: -6, armL: { a: 25, b: -15 }, armR: { a: 25, b: -15 }, legL: { a: 0, b: 0 }, legR: { a: 0, b: 0 }, expr: 'worried', blink: 0, look: -0.4, glasses: 0, yaw: -0.3, squash: 0, handL: 'open', handR: 'open', sway: 0 }} shadow={0} />
-        <FloatingTimer x={0} y={-230} timeText="00D : 18H : 10M" kind="danger" scale={1.05} t={t} />
+        <FloatingTimer x={0} y={-325} timeText="00D : 18H : 10M" kind="danger" scale={1.05} t={t} />
       </g>
     </g>
   );
@@ -194,7 +194,7 @@ export const S8: React.FC<ShotProps> = ({ t, len }) => {
       <Stairwell t={t} id="ch4_s8" />
       <g transform="translate(960 720)">
         <Hero look={PIP} pose={{ x: 0, y: 0, scale: 1.15, facing: 1, tilt: 4, spin: 0, headTilt: -6, armL: { a: 15, b: -10 }, armR: { a: -15, b: -10 }, legL: { a: 5, b: 0 }, legR: { a: -5, b: 0 }, expr: 'tired', blink: 0, look: 0, glasses: 0, yaw: 0, squash: 0, handL: 'open', handR: 'open', sway: 0 }} shadow={0} />
-        <FloatingTimer x={0} y={-230} timeText="00D : 02H : 14M" kind="danger" scale={1.1} t={t} />
+        <FloatingTimer x={0} y={-325} timeText="00D : 02H : 14M" kind="danger" scale={1.1} t={t} />
         <Glow x={0} y={-230} r={380} kind="red" o={0.45} />
       </g>
     </g>
@@ -213,7 +213,7 @@ export const S9: React.FC<ShotProps> = ({ t, len }) => {
       {/* Distorted Pip standing in hallway */}
       <g transform="translate(960 620) scale(1.6)">
         <Hero look={PIP} pose={{ x: 0, y: 0, scale: 1, facing: 1, tilt: 0, spin: 0, headTilt: 0, armL: { a: 10, b: -5 }, armR: { a: -10, b: -5 }, legL: { a: 0, b: 0 }, legR: { a: 0, b: 0 }, expr: 'worried', blink: 0, look: 0, glasses: 0, yaw: 0, squash: 0, handL: 'open', handR: 'open', sway: 0, glint: 1, glintColor: '#EF4444' }} shadow={0} />
-        <FloatingTimer x={0} y={-215} timeText="00D : 01H : 55M" kind="danger" scale={0.9} t={t} />
+        <FloatingTimer x={0} y={-325} timeText="00D : 01H : 55M" kind="danger" scale={0.9} t={t} />
       </g>
       <Glow x={960} y={540} r={520} kind="red" o={0.4} />
     </g>
@@ -229,7 +229,7 @@ export const S10: React.FC<ShotProps> = ({ t, len }) => {
       <Bedroom t={t + 60} id="ch4_s10" />
       <g transform="translate(960 740)">
         <Hero look={PIP} pose={{ x: 0, y: 0, scale: 1.15, facing: 1, tilt: 14, spin: 0, headTilt: 12, armL: { a: 60, b: -45 }, armR: { a: 60, b: -45 }, legL: { a: 0, b: 0 }, legR: { a: 0, b: 0 }, expr: 'shock', blink: 0, look: 0, glasses: 0, yaw: 0, squash: 0, handL: 'open', handR: 'open', sway: 0 }} shadow={0} />
-        <FloatingTimer x={0} y={-235} timeText="00:44:59" kind="danger" scale={1.2} t={t} />
+        <FloatingTimer x={0} y={-325} timeText="00:44:59" kind="danger" scale={1.2} t={t} />
         <Glow x={0} y={-235} r={420} kind="red" o={0.5} />
       </g>
     </g>
@@ -243,14 +243,37 @@ export const S11: React.FC<ShotProps> = ({ t, len }) => {
   const tremble = Math.sin(t * 2.0) * 5;
   return (
     <g transform={camT(960, 540, 1.1)}>
-      <rect width={1920} height={1080} fill="#0E121B" />
-      <g transform={`translate(${960 + tremble} ${540 + tremble})`}>
-        <ellipse cx={-120} cy={0} rx={75} ry={55} fill="#F6EFE3" stroke="#1D2033" strokeWidth={6} />
-        <ellipse cx={120} cy={0} rx={75} ry={55} fill="#F6EFE3" stroke="#1D2033" strokeWidth={6} />
-        {/* Sweat drops */}
-        <circle cx={-120} cy={65} r={8} fill="#38BDF8" opacity={0.8} />
-        <circle cx={120} cy={65} r={8} fill="#38BDF8" opacity={0.8} />
-      </g>
+      <Bedroom t={t} id="ch4_s11" />
+      {/* Pip trembling in panic, clutching chest and head with cold sweat, no floating ovals */}
+      <Hero
+        look={PIP}
+        pose={{
+          x: 960 + tremble,
+          y: 710,
+          scale: 1.1,
+          facing: 1,
+          tilt: -8,
+          spin: 0,
+          headTilt: 8,
+          armL: { a: 110, b: 85 },
+          armR: { a: 110, b: 85 },
+          legL: { a: 8, b: 0 },
+          legR: { a: -8, b: 0 },
+          expr: 'worried',
+          blink: 0,
+          look: -0.4,
+          glasses: 0,
+          yaw: -0.3,
+          squash: 0,
+          handL: 'open',
+          handR: 'open',
+          sway: tremble,
+        }}
+        shadow={0.5}
+      />
+      {/* Sweat drops */}
+      <circle cx={920} cy={500} r={7} fill="#38BDF8" opacity={0.85} />
+      <circle cx={1000} cy={505} r={7} fill="#38BDF8" opacity={0.85} />
       <TimerHud timeText="HANDS SHAKING LIKE AUTUMN LEAVES" label="AUTONOMIC NERVOUS SYSTEM SHUTDOWN" t={t} color="#FF334B" />
     </g>
   );
@@ -266,7 +289,7 @@ export const S12: React.FC<ShotProps> = ({ t, len }) => {
       <Bedroom t={t + 100} id="ch4_s12" />
       <g transform={`translate(${paceX} 720)`}>
         <Hero look={PIP} pose={{ x: 0, y: 0, scale: 1.15, facing: 1, tilt: 6, spin: 0, headTilt: -4, armL: { a: 35, b: -20 }, armR: { a: -35, b: -20 }, legL: { a: 15, b: -10 }, legR: { a: -15, b: -10 }, expr: 'worried', blink: 0, look: 0, glasses: 0, yaw: 0, squash: 0, handL: 'open', handR: 'open', sway: 0 }} shadow={0} />
-        <FloatingTimer x={0} y={-230} timeText="00:38:12" kind="danger" scale={1.15} t={t} />
+        <FloatingTimer x={0} y={-325} timeText="00:38:12" kind="danger" scale={1.15} t={t} />
       </g>
     </g>
   );
@@ -311,7 +334,7 @@ export const S14: React.FC<ShotProps> = ({ t, len }) => {
       <rect width={1920} height={1080} fill={sirenColor} opacity={0.2} />
       <g transform="translate(960 720)">
         <Hero look={PIP} pose={{ x: 0, y: 0, scale: 1.1, facing: 1, tilt: -6, spin: 0, headTilt: -6, armL: { a: 20, b: -10 }, armR: { a: -20, b: -10 }, legL: { a: 0, b: 0 }, legR: { a: 0, b: 0 }, expr: 'shock', blink: 0, look: 0, glasses: 0, yaw: 0, squash: 0, handL: 'open', handR: 'open', sway: 0 }} shadow={0} />
-        <FloatingTimer x={0} y={-230} timeText="00:24:18" kind="danger" scale={1.15} t={t} />
+        <FloatingTimer x={0} y={-325} timeText="00:24:18" kind="danger" scale={1.15} t={t} />
       </g>
     </g>
   );

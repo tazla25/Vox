@@ -20,7 +20,7 @@ export const S1: React.FC<ShotProps> = ({ t, len }) => {
       {/* Pip entering from left */}
       <g transform="translate(620 720)">
         <Hero look={PIP} pose={{ x: 0, y: 0, scale: 1.05, facing: 1, tilt: 6, spin: 0, headTilt: 4, armL: { a: 25, b: -15 }, armR: { a: -20, b: -10 }, legL: { a: 15, b: -5 }, legR: { a: -15, b: -5 }, expr: 'worried', blink: 0, look: 0.6, glasses: 0, yaw: 0.5, squash: 0, handL: 'open', handR: 'open', sway: 0 }} shadow={0} />
-        <FloatingTimer x={0} y={-225} timeText="02D : 18H : 40M" kind="danger" scale={1.0} t={t} />
+        <FloatingTimer x={0} y={-325} timeText="02D : 18H : 40M" kind="danger" scale={1.0} t={t} />
       </g>
       {/* Scientist welcoming at desk */}
       <g transform="translate(1260 700)">
@@ -217,13 +217,34 @@ export const S10: React.FC<ShotProps> = ({ t, len }) => {
   const shake = Math.sin(t * 1.8) * 6;
   return (
     <g transform={camT(960, 540, 1.1)}>
-      <rect width={1920} height={1080} fill="#141824" />
-      <rect x={200} y={620} width={1520} height={460} rx={16} fill="#232938" stroke="#374151" strokeWidth={4} />
-      {/* Pip's shaking hand */}
-      <g transform={`translate(${960 + shake} ${540 + shake})`}>
-        <ellipse cx={0} cy={0} rx={65} ry={48} fill="#F6EFE3" stroke="#1D2033" strokeWidth={6} />
-        <circle cx={-35} cy={-25} r={18} fill="#F6EFE3" stroke="#1D2033" strokeWidth={5} />
-      </g>
+      <Study t={t} id="ch3_s10" />
+      {/* Pip standing at desk with trembling arms, shock expression, no floating ovals */}
+      <Hero
+        look={PIP}
+        pose={{
+          x: 960 + shake,
+          y: 710,
+          scale: 1.05,
+          facing: 1,
+          tilt: 6,
+          spin: 0,
+          headTilt: -6,
+          armL: { a: 45 + shake * 2, b: 50 },
+          armR: { a: 45 - shake * 2, b: 50 },
+          legL: { a: 5, b: 0 },
+          legR: { a: -5, b: 0 },
+          expr: 'shock',
+          blink: 0,
+          look: 0.5,
+          glasses: 0,
+          yaw: 0.3,
+          squash: 0,
+          handL: 'open',
+          handR: 'open',
+          sway: shake,
+        }}
+        shadow={0.5}
+      />
       <TimerHud timeText="MOTOR CONTROL DESTRUCTION" label="CORTISOL SHUTTING DOWN WORKING MEMORY" t={t} color="#FF334B" />
     </g>
   );
@@ -311,7 +332,7 @@ export const S15: React.FC<ShotProps> = ({ t, len }) => {
       <Rooftop t={t + 60} />
       <g transform="translate(960 720)">
         <Hero look={PIP} pose={{ x: 0, y: 0, scale: 1.1, facing: 1, tilt: -4, spin: 0, headTilt: -8, armL: { a: 15, b: -5 }, armR: { a: -15, b: -5 }, legL: { a: 0, b: 0 }, legR: { a: 0, b: 0 }, expr: 'worried', blink: 0, look: 0, glasses: 0, yaw: 0, squash: 0, handL: 'open', handR: 'open', sway: 0 }} shadow={0} />
-        <FloatingTimer x={0} y={-230} timeText="02D : 04H : 18M" kind="danger" scale={1.1} t={t} />
+        <FloatingTimer x={0} y={-325} timeText="02D : 04H : 18M" kind="danger" scale={1.1} t={t} />
       </g>
     </g>
   );

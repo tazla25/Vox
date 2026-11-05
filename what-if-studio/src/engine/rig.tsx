@@ -29,9 +29,9 @@ export type Look = {
   shoe: string;
   face: string;
   hair: string;
-  extra?: 'hood' | 'curls' | 'bunches' | 'bob' | 'suit';
+  extra?: 'hood' | 'curls' | 'bunches' | 'bob' | 'suit' | 'ponytail' | 'clip';
 };
-export type CastName = 'pip' | 'pipHood' | 'pipInk' | 'mo' | 'sis' | 'mom' | 'suit';
+export type CastName = 'pip' | 'pipHood' | 'pipInk' | 'mo' | 'sis' | 'mom' | 'suit' | 'maya' | 'quietGirl';
 export const LOOKS: Record<CastName, Look> = {
   // A: Pip as built
   pip: { skin: C.skin, skinShade: C.skinShade, hand: C.skin, jacket: C.jacket, jacketShade: C.jacketShade, accent: C.jacketShade, limb: C.limb, line: C.ink, shoe: C.shoe, face: C.ink, hair: C.ink },
@@ -46,6 +46,10 @@ export const LOOKS: Record<CastName, Look> = {
   sis: { skin: C.skin, skinShade: C.skinShade, hand: C.skin, jacket: '#3E8C86', jacketShade: '#2F6E69', accent: '#F28C6A', limb: '#3A3446', line: '#14121C', shoe: '#F28C6A', face: C.ink, hair: '#3A2620', extra: 'bunches' },
   mom: { skin: C.skin, skinShade: C.skinShade, hand: C.skin, jacket: '#8A5A6A', jacketShade: '#704858', accent: '#E9C46A', limb: '#3A3446', line: '#14121C', shoe: '#5A4A6A', face: C.ink, hair: '#5A3226', extra: 'bob' },
   suit: { skin: '#D9C6AE', skinShade: '#C2AE96', hand: '#D9C6AE', jacket: '#2B2F3A', jacketShade: '#20232C', accent: '#A8323E', limb: '#2B2F3A', line: '#0E0F14', shoe: '#14151A', face: C.ink, hair: '#17141A', extra: 'suit' },
+  // Maya: the popular girl classmate, ponytail with coral band, lavender/periwinkle jacket
+  maya: { skin: C.skin, skinShade: C.skinShade, hand: C.skin, jacket: '#6E618A', jacketShade: '#564A70', accent: '#FF758F', limb: '#322B42', line: '#161320', shoe: '#FF758F', face: C.ink, hair: '#4A2E20', extra: 'ponytail' },
+  // Quiet Girl (Hana): the shy classmate on the rooftop who secretly had the 99% crush, side hair clip, dark teal jacket
+  quietGirl: { skin: C.skin, skinShade: C.skinShade, hand: C.skin, jacket: '#2E4C5A', jacketShade: '#223B47', accent: '#FF3366', limb: '#23323B', line: '#11181D', shoe: '#FF3366', face: C.ink, hair: '#201A24', extra: 'clip' },
 };
 
 // ---------- the hero ----------
@@ -157,6 +161,11 @@ const HIP = { x: 17, y: 0 };
 export const HEAD = { x: 0, y: -176, r: 62 };
 export const LEG_LEN = THIGH + SHIN;
 
+// Overhead UI Clearance & Positioning (Strict Rule: locked at least 70px ABOVE top of head/hood)
+export const HEAD_TOP_LOCAL_Y = -256; // Apex of Pip's hood (-176 - 80) and Mo's hair curls
+export const OVERHEAD_MIN_CLEARANCE = 70; // Strictly enforced clearance in px (at least 70px)
+export const OVERHEAD_BADGE_Y = HEAD_TOP_LOCAL_Y - OVERHEAD_MIN_CLEARANCE; // -326px (relative to hip y=0)
+
 const rad = (d: number) => (d * Math.PI) / 180;
 type P = { x: number; y: number };
 const rot = (p: P, deg: number, c: P = { x: 0, y: 0 }): P => {
@@ -164,6 +173,18 @@ const rot = (p: P, deg: number, c: P = { x: 0, y: 0 }): P => {
   const dx = p.x - c.x;
   const dy = p.y - c.y;
   return { x: c.x + dx * Math.cos(r) - dy * Math.sin(r), y: c.y + dx * Math.sin(r) + dy * Math.cos(r) };
+};
+
+/**
+ * Calculates the exact overhead anchor point in world coordinates for a character pose.
+ * Strictly guarantees clearance of at least minClearance (default 70px) above the head/hood apex
+ * under any scale, tilt, spin, and camera zoom.
+ */
+export const overheadAnchor = (pose: Pose, minClearance = OVERHEAD_MIN_CLEARANCE): P => {
+  const clearance = Math.max(minClearance, OVERHEAD_MIN_CLEARANCE);
+  const localY = HEAD_TOP_LOCAL_Y - clearance;
+  const tilted = rot({ x: 0, y: localY }, pose.tilt, { x: 0, y: 0 });
+  return toWorld(pose, tilted);
 };
 
 /** Joint positions in local space (before the hip translate/scale), so scenes can attach props to hands. */
@@ -309,7 +330,15 @@ const Face: React.FC<{ expr: Expr; blink: number; look: number; glasses: number;
   );
 };
 
-export const Hero: React.FC<{ pose: Pose; shadow?: number; rimId?: string; look?: Look }> = ({ pose, shadow = 1, rimId = 'rimR', look = LOOKS.pipHood }) => {
+export interface HeroProps {
+  pose: Pose;
+  shadow?: number;
+  rimId?: string;
+  look?: Look;
+  overhead?: React.ReactNode;
+}
+
+export const Hero: React.FC<HeroProps> = ({ pose, shadow = 1, rimId = 'rimR', look = LOOKS.pipHood, overhead }) => {
   const j = joints(pose);
   const L = look;
   // limbs are light with a dark outline, so they read on the dark sets (navy limbs vanished on navy walls)
@@ -368,9 +397,33 @@ export const Hero: React.FC<{ pose: Pose; shadow?: number; rimId?: string; look?
     <g transform={`rotate(${pose.tilt}) rotate(${pose.headTilt} 0 ${HEAD.y + 40})`}>
       <circle cx={HEAD.x} cy={HEAD.y} r={HEAD.r} fill={L.skin} stroke={L.line} strokeWidth={4} />
       <path d={`M ${HEAD.x + 14} ${HEAD.y + 58} A ${HEAD.r} ${HEAD.r} 0 0 0 ${HEAD.x + 60} ${HEAD.y + 14} A 70 70 0 0 1 ${HEAD.x + 14} ${HEAD.y + 58} Z`} fill={L.skinShade} />
-      {L.extra === 'bunches' || L.extra === 'bob' || L.extra === 'suit' ? null : (
+      {L.extra === 'bunches' || L.extra === 'bob' || L.extra === 'suit' || L.extra === 'ponytail' || L.extra === 'clip' ? null : (
         <path transform={`translate(${-pose.yaw * 16} 0)`} d={`M -6 ${HEAD.y - 60} q 10 -26 30 -18 q -16 2 -14 16 q -8 -10 -16 2 Z`} fill={L.hair} />
       )}
+      {L.extra === 'ponytail' ? (
+        // Maya's high ponytail swinging to one side with coral hair tie
+        <g>
+          <g transform={`rotate(${pose.sway * 0.4} 54 ${HEAD.y - 45})`}>
+            <circle cx={52 - pose.yaw * 10} cy={HEAD.y - 42} r={10} fill={L.accent} />
+            <path
+              d={`M ${48 - pose.yaw * 10} ${HEAD.y - 38} Q ${90 - pose.yaw * 8} ${HEAD.y - 20} ${105 - pose.yaw * 8} ${HEAD.y + 35} Q ${75 - pose.yaw * 8} ${HEAD.y + 15} ${52 - pose.yaw * 10} ${HEAD.y - 32} Z`}
+              fill={L.hair}
+              stroke={L.line}
+              strokeWidth={3}
+            />
+          </g>
+          {/* Hair cap and side bangs */}
+          <path transform={`translate(${-pose.yaw * 14} 0)`} d={`M -60 ${HEAD.y - 20} Q -62 ${HEAD.y - 68} 0 ${HEAD.y - 68} Q 62 ${HEAD.y - 68} 60 ${HEAD.y - 20} Q 40 ${HEAD.y - 48} 12 ${HEAD.y - 42} Q -10 ${HEAD.y - 54} -30 ${HEAD.y - 42} Q -48 ${HEAD.y - 46} -60 ${HEAD.y - 20} Z`} fill={L.hair} />
+        </g>
+      ) : null}
+      {L.extra === 'clip' ? (
+        // Quiet Girl's neat dark hair with side pink hair clip
+        <g>
+          <path transform={`translate(${-pose.yaw * 12} 0)`} d={`M -64 ${HEAD.y + 20} Q -66 ${HEAD.y - 68} 0 ${HEAD.y - 70} Q 66 ${HEAD.y - 68} 64 ${HEAD.y + 20} L 52 ${HEAD.y + 20} Q 56 ${HEAD.y - 24} 30 ${HEAD.y - 40} Q 0 ${HEAD.y - 46} -28 ${HEAD.y - 38} Q -50 ${HEAD.y - 20} -52 ${HEAD.y + 20} Z`} fill={L.hair} stroke={L.line} strokeWidth={3.5} />
+          {/* Neon pink hair clip */}
+          <rect x={-36 - pose.yaw * 10} y={HEAD.y - 42} width={18} height={6} rx={3} fill={L.accent} />
+        </g>
+      ) : null}
       {L.extra === 'bunches' ? (
         // a fringe cap and two bunches tied with coral bands; the bunches swing a little with sway
         <g>
@@ -440,6 +493,11 @@ export const Hero: React.FC<{ pose: Pose; shadow?: number; rimId?: string; look?
             </g>
           ) : null}
           {head}
+          {overhead ? (
+            <g transform={`rotate(${pose.tilt})`}>
+              {overhead}
+            </g>
+          ) : null}
         </g>
       </g>
     </g>

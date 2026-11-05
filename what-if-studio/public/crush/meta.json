@@ -1,0 +1,27 @@
+{
+  "ch1": {
+    "duration": 85.68,
+    "frames": 2570,
+    "file": "/crush/ch1_audio.mp3"
+  },
+  "ch2": {
+    "duration": 70.968,
+    "frames": 2129,
+    "file": "/crush/ch2_audio.mp3"
+  },
+  "ch3": {
+    "duration": 75.24,
+    "frames": 2257,
+    "file": "/crush/ch3_audio.mp3"
+  },
+  "ch4": {
+    "duration": 67.872,
+    "frames": 2036,
+    "file": "/crush/ch4_audio.mp3"
+  },
+  "ch5": {
+    "duration": 79.224,
+    "frames": 2377,
+    "file": "/crush/ch5_audio.mp3"
+  }
+}
